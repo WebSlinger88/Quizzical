@@ -1,2 +1,6 @@
 /*The below code allows us to connect with Google Fonts. Amarante has been selected for our main font. Roboto for fallback.*/
 @import url('https://fonts.googleapis.com/css2?family=Amarante|Roboto&display=swap:100,200,300,400,500,600,700');
+
+:root {
+    background-color: #800080;
+}
