@@ -4,3 +4,7 @@
 :root {
     background-color: #800080;
 }
+
+* {
+    padding: 0;
+}
