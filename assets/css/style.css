@@ -24,14 +24,23 @@ body {
 .home-text {
     text-align: center;
     padding: 0 14rem 0 14rem;
+    font-size: 1.2rem;
 }
 
 .btn {
   font-size: 1.75rem;
   width: 22rem;
-  text-decoration: none;
   color: #800080;
   background-color: #CA9E65;
   border-radius: 2rem;
 }
 
+/* -- Footer -- */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
