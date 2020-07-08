@@ -13,7 +13,13 @@ body {
     margin: 0;
 }
 
-.home-logo{
+.home-logo {
     width: 22.5rem;
     height: auto;
+}
+
+.home-text {
+    text-align: center;
+    padding-left: 14rem;
+    padding-right: 14rem;
 }
