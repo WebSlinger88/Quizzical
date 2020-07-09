@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante|Roboto&display=swap:100,200,300,400,500,600,700');
 
 /* -- All Pages -- */
+
 body {
     background-color: #800080;
     text-align: center;
@@ -9,27 +10,15 @@ body {
     color: #CA9E65;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 /* -- Home Page -- */
-
-.home-logo {
-    width: 22.5rem;
-    height: auto;
-}
 
 .home-text {
     text-align: center;
-    padding: 0 14rem 0 14rem;
-    font-size: 1.2rem;
+    font-size: 2vh;
 }
 
 .btn {
-  font-size: 1.75rem;
-  width: 22rem;
+  font-size: 2.75vh;
   color: #800080;
   background-color: #CA9E65;
   border-radius: 2rem;
@@ -38,9 +27,5 @@ body {
 /* -- Footer -- */
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    font-size: 1.8vh;
 }
