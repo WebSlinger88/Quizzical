@@ -55,7 +55,18 @@ main {
 /* -- Questions -- */
 
 .page-logo {
-float: left;
+    float: left;
+}
+
+.question-container {
+    font-size: 2.75vh;
+    color: #800080;
+    background-color: #CA9E65;
+    border-radius: 2rem;
+}
+
+#quiz-question {
+    margin-bottom: 2rem;
 }
 
 /* -- Footer -- */
