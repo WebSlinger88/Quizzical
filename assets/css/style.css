@@ -20,6 +20,21 @@ main {
 
 /* -- Home Page -- */
 
+.home-logo {
+    animation-name: logo-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-zoom {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.0);
+    }
+}
+
 .home-text {
     text-align: center;
     font-size: 1.8vh;
