@@ -47,6 +47,17 @@ main {
   border-radius: 2rem;
 }
 
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.35rem 1.35rem 0 rgba(203, 158, 101, 0.8);
+}
+
+/* -- Questions -- */
+
+.page-logo {
+float: left;
+}
+
 /* -- Footer -- */
 
 .footer {
