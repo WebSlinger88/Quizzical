@@ -3,18 +3,26 @@
 
 /* -- All Pages -- */
 
+/*I've added min-height, display flex, flex direction and flex 1 to push my footer to the bottom of the screen */
 body {
     background-color: #800080;
     text-align: center;
     font-family: Amarante, Roboto;
     color: #CA9E65;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 /* -- Home Page -- */
 
 .home-text {
     text-align: center;
-    font-size: 2vh;
+    font-size: 1.8vh;
 }
 
 .btn {
@@ -27,5 +35,5 @@ body {
 /* -- Footer -- */
 
 .footer {
-    font-size: 1.8vh;
+    font-size: 1.5vh;
 }
