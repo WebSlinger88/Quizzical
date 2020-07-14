@@ -66,6 +66,11 @@ main {
     border-radius: 2rem;
 }
 
+.question-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.35rem 1.35rem 0 rgba(203, 158, 101, 0.8);
+}
+
 #quiz-question {
     margin-bottom: 2rem;
 }
