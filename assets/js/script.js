@@ -1,3 +1,5 @@
+/*VARIABLES*/
+
 /*--I have created two variables which will pull information from the questions.html file via Id and Class name. 
 They will reference the quiz questions and quiz answers. I want the answers to be an array so that we have four different options to choose from--*/ 
 
@@ -61,6 +63,8 @@ let quizQuests = [
     } 
 ]; 
 
+/*GAME BEGIN FUNCTION*/
+
 /*--This is the gameBegin function which is the function that’ll be used at the beginning of the game. 
 We’ll start on qNum (question number) 0 and we’ll start with a score of 0. 
 availableQ is our empty array which will copy our questions from our quizQuests array using the spread operator. 
@@ -77,3 +81,49 @@ gameBegin = function() {
 
     nextQuest(); 
 }; 
+
+/*NEXT QUESTION FUNCTION*/
+
+/*--The function below basically says, if there are no more available questions in the availableQ array OR the totalQuests limit has been reached, 
+a new page will be loaded. In this instance the completed.html page will be loaded and that will tell the user that they have completed the game--*/ 
+
+/*--The game’s qNum will start at 0 but when we start playing the game qNum++ will increment the game’s question number to 1 and so on
+until we reach our limit. The limit is set in the const variable totalQuests--*/
+
+/*--In order to generate a random question we need to do a little math. Math.random() will generate a random decimal number between 0 and 1. 
+If we want a higher number than that we need to multiply it by a number. If we wanted a random number between 0 and 10 then we would * the Math.random() by 10. 
+In this instance we don’t necessarily want to multiply it by a number, we want to multiply it by the number of remaining items within our availableQ array. 
+If we have 10 questions remaining in our availableQ array and we use one question, we have 9 remaining. Math.random() * availableQ.length will generate a random 
+number depending on how many questions are remaining with the array. Adding Math.floor to the beginning of this statement will get rid of the decimal point and 
+take the first number presented to us. For example, if we had the number 2.5893546 and we added Math.floor to our statement it would remove the decimal point and 
+any numbers following it and leave us with the number 2. Whilst playing the game, our next question will be question number 2 within the availableQ array. 
+To reference this I have placed this statement within a variable called qCatalogue--*/
+
+/*--Our current question will be the available question that has been selected via our qCatalogue hence the currentQ = availableQ[qCatalogue] next we will take 
+the quizQ’s (quiz question’s) HTML element, the innerText, and make it the currentQ (current question) --*/ 
+
+/*--There’s a little function within the nextQuest function that will help us generate the answers for each question. Within the questions.html file I’ve placed 
+a data-number within each question. Here we are referencing that data-number. This function is basically saying find the “answer” within the quizA variable and 
+find it’s dataset-number and display the answers relating to the speficic currentQ (current question)--*/ 
+
+/*--Finally we’re taking the availableQ array and we’re splicing out the question that we just used so that we don’t randomly generate the same question twice. 
+answerDelay is set to true so that when the question has loaded we’re giving permission to the user to go ahead and answer--*/
+
+nextQuest = function() { 
+    if (availableQ.length === 0 || qNum >= totalQuests) { 
+        return window.location.assign("/completed.html"); 
+    } 
+
+    qNum++; 
+    const qCatalogue = Math.floor(Math.random() * availableQ.length); 
+    currentQ = availableQ[qCatalogue]; 
+    quizQ.innerText = currentQ.question;
+
+    quizA.forEach( answer => { 
+        const number = answer.dataset['number']; 
+        answer.innerText = currentQ['answer' + number]; 
+    });
+
+        availableQ.splice(qCatalogue, 1); 
+        answerDelay = true; 
+};
