@@ -24,11 +24,11 @@ let qNum = 0;
 let availableQ = [];
 
 /*--The correctPoints variable is how many points will be awarded for a correct answer--*/ 
-/*--The wrongPoints variable is how many points will be deducted for a wrong answer--*/ 
+/*--The incorrectPoints variable is how many points will be deducted for a wrong answer--*/ 
 /*--The totalQuests variable set the limit for how many questions a user will be given--*/ 
 
 const correctPoints = 10;
-const wrongPoints = 5;
+const incorrectPoints = 5;
 const totalQuests = 3;
 
 /*--quizQuests is a variable which contains a handful of questions in the form of objects. 
@@ -127,3 +127,24 @@ nextQuest = function() {
         availableQ.splice(qCatalogue, 1); 
         answerDelay = true; 
 };
+
+/*--This little function will stop a user from being able to click an answer if the website isn’t ready for it. 
+Also a new question will be generated when an answer is clicked on (nextQuest()). It can go either two ways, 
+chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 
+Once an answer has been chosen the nextQuest() function will engage--*/ 
+
+quizA.forEach(answer =>[ 
+    answer.addEventListener('click', e =>{ 
+        if(!answerDelay) return;
+        answerDelay = false; 
+
+        const chosenAnswer = e.target; 
+        const chosenCorrect = chosenAnswer.dataset["number"]; 
+
+        nextQuest(); 
+    }) 
+]); 
+
+/*--This is where we call the gameBegin function. It's at the bottom so that it gets called first before anything else--*/ 
+
+gameBegin(); 
