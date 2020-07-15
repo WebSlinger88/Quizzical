@@ -89,6 +89,13 @@ main {
     color: #FFFFFF;
 }
 
+.detail-feature-1 {
+    float: left;
+}
+
+.detail-feature-2 {
+    float: right;
+}
 
 /* -- Footer -- */
 
