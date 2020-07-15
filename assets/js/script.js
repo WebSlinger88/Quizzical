@@ -60,3 +60,20 @@ let quizQuests = [
         answer: 2 
     } 
 ]; 
+
+/*--This is the gameBegin function which is the function that’ll be used at the beginning of the game. 
+We’ll start on qNum (question number) 0 and we’ll start with a score of 0. 
+availableQ is our empty array which will copy our questions from our quizQuests array using the spread operator. 
+The spread operator [...quizQuests] takes an array, spreads out each of its items and puts them into a new array (availableQ). 
+Ultimately when availableQ runs out of items, the game will finish. Either that or when totalQuests reaches it’s limit, the game will end.--*/ 
+
+/*--the nextQuest function will be called within the gameBegin function to initiate the next question within the game. 
+Basically when we have started the game and chosen our first answer, we’ll move onto the next question--*/ 
+
+gameBegin = function() { 
+    score = 0; 
+    qNum = 0; 
+    availableQ = [...quizQuests]; 
+
+    nextQuest(); 
+}; 
