@@ -129,21 +129,32 @@ nextQuest = function() {
 };
 
 /*--This little function will stop a user from being able to click an answer if the website isn’t ready for it. 
-Also a new question will be generated when an answer is clicked on (nextQuest()). It can go either two ways, 
-chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 
+This function can go either two ways, chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 
+The parentElement.classList add/remove code links to our style.css file and searches for the class names .correct and .incorrect.
+This will change the colour of the buttons to either green or red depending on whether the question is answered correctly.
+Text will also become white. I've chosen this because the original black text clashed with my chosen colours.
+I've given this functon a setTimeout so that our correct/incorrect colours hang for just little over a second (1200ms).
+This gives the user recognition that they have answered correctly or incorrectly.
 Once an answer has been chosen the nextQuest() function will engage--*/ 
 
-quizA.forEach(answer =>[ 
-    answer.addEventListener('click', e =>{ 
-        if(!answerDelay) return;
+quizA.forEach(answer => { 
+    answer.addEventListener("click", e => { 
+        if (!answerDelay) return;
         answerDelay = false; 
 
         const chosenAnswer = e.target; 
         const chosenCorrect = chosenAnswer.dataset["number"]; 
+            
+        const colorChange = chosenCorrect == currentQ.answer ? "correct" : "incorrect";
 
-        nextQuest(); 
-    }) 
-]); 
+        chosenAnswer.parentElement.classList.add(colorChange);
+
+        setTimeout(() => {
+            chosenAnswer.parentElement.classList.remove(colorChange);
+            nextQuest(); 
+        }, 1200);
+    });
+});
 
 /*--This is where we call the gameBegin function. It's at the bottom so that it gets called first before anything else--*/ 
 

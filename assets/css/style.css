@@ -80,12 +80,12 @@ main {
 }
 
 .correct {
-    background-color: #008000;
+    background-color: #037403;
     color: #FFFFFF;
 }
 
 .incorrect {
-    background-color: #FF0000;
+    background-color: #B61E1E;
     color: #FFFFFF;
 }
 
