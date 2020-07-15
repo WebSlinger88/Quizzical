@@ -79,6 +79,16 @@ main {
     width: 100%;
 }
 
+.correct {
+    background-color: #008000;
+    color: #FFFFFF;
+}
+
+.incorrect {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
 /* -- Footer -- */
 
 .footer {
