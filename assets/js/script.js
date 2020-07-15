@@ -3,10 +3,15 @@
 /*--I have created two variables which will pull information from the questions.html file via Id and Class name. 
 They will reference the quiz questions and quiz answers. I want the answers to be an array so that we have four different options to choose from--*/ 
 
+/*--I have created another two variables which will pull information from the questions.html file via Id. 
+They will reference the number of questions a user is currently on and the users score--*/ 
+
 /*--I've chosen 'const' as my variable because it can't and won't be changed, unlike let and var where their contents can be changed--*/
 
 const quizQ = document.getElementById("quiz-question");
 const quizA = Array.from(document.getElementsByClassName("quiz-answer"));
+const tallyQ = document.getElementById("questionTally");
+const tallyS = document.getElementById("scoreTally");
 
 /*--I have created another handful of variables which will each have a role to play--*/ 
 
