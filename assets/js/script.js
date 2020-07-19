@@ -120,6 +120,8 @@ nextQuest = function() {
     } 
 
     qNum++; 
+    tallyQ.innerText = qNum + "/" + totalQuests;
+
     const qCatalogue = Math.floor(Math.random() * availableQ.length); 
     currentQ = availableQ[qCatalogue]; 
     quizQ.innerText = currentQ.question;
