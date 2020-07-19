@@ -95,6 +95,11 @@ a new page will be loaded. In this instance the completed.html page will be load
 /*--The game’s qNum will start at 0 but when we start playing the game qNum++ will increment the game’s question number to 1 and so on
 until we reach our limit. The limit is set in the const variable totalQuests--*/
 
+/*--In order for the question tally to update after we answer a question I've set the tallyQ innerText (this basically places it within the HTML document) to equal
+the current question number over the total amount of questions. Long story short - The questionTally Id element (tallyQ) within questions.html will display the current question
+over the total amount of questions, for example: 4/10. This will update dynamically depending on which question we're currently on. The totalQuests number will stay
+the same throughout the entire game because it will be set to a specific number using a const variable--*/
+
 /*--In order to generate a random question we need to do a little math. Math.random() will generate a random decimal number between 0 and 1. 
 If we want a higher number than that we need to multiply it by a number. If we wanted a random number between 0 and 10 then we would * the Math.random() by 10. 
 In this instance we don’t necessarily want to multiply it by a number, we want to multiply it by the number of remaining items within our availableQ array. 
@@ -144,6 +149,11 @@ I've given this functon a setTimeout so that our correct/incorrect colours hang 
 This gives the user recognition that they have answered correctly or incorrectly.
 Once an answer has been chosen the nextQuest() function will engage--*/ 
 
+/*--Within the function below we have two if statements. These will increase or decrease points depending on whether the user
+chose a correct or incorrect answer. if the user chose correctly, the increaseScore function shall be called and points will
+be added. if the user chose incorrectly then the decreaseScore function shall be called and points will be decucted. These points
+are dictated by the variables previously set (correctPoints / incorrectPoints)--*/
+
 quizA.forEach(answer => { 
     answer.addEventListener("click", e => { 
         if (!answerDelay) return;
@@ -154,6 +164,14 @@ quizA.forEach(answer => {
             
         const colorChange = chosenCorrect == currentQ.answer ? "correct" : "incorrect";
 
+        if(colorChange === "correct") {
+            increaseScore(correctPoints);
+        }
+
+        if(colorChange === "incorrect") {
+            decreaseScore(incorrectPoints);
+        }
+
         chosenAnswer.parentElement.classList.add(colorChange);
 
         setTimeout(() => {
@@ -162,6 +180,20 @@ quizA.forEach(answer => {
         }, 1200);
     });
 });
+
+/*--The two functions below are set to either increase or decrease the score and then display it on the questions.html page
+via the tallyS variable. These functions are called above in our if() statements. If the answer is correct, award points.
+If the answer is incorrect, deduct points. This is made possible by stating score += / -= num--*/
+
+increaseScore = num => {
+    score += num;
+    tallyS.innerText = score;
+};
+
+decreaseScore = num => {
+    score -= num;
+    tallyS.innerText = score;
+}
 
 /*--This is where we call the gameBegin function. It's at the bottom so that it gets called first before anything else--*/ 
 
