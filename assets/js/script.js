@@ -12,6 +12,8 @@ const quizQ = document.getElementById("quiz-question");
 const quizA = Array.from(document.getElementsByClassName("quiz-answer"));
 const tallyQ = document.getElementById("questionTally");
 const tallyS = document.getElementById("scoreTally");
+const progBar = document.getElementsByClassName("progression-bar");
+const currentProg = document.getElementsByClassName("progression");
 
 /*--I have created another handful of variables which will each have a role to play--*/ 
 
@@ -125,8 +127,9 @@ nextQuest = function() {
     } 
 
     qNum++; 
+    // currentProg.style.width = `${(qNum / totalQuests) * 100}%`;
     tallyQ.innerText = qNum + "/" + totalQuests;
-
+    
     const qCatalogue = Math.floor(Math.random() * availableQ.length); 
     currentQ = availableQ[qCatalogue]; 
     quizQ.innerText = currentQ.question;
@@ -139,6 +142,7 @@ nextQuest = function() {
         availableQ.splice(qCatalogue, 1); 
         answerDelay = true; 
 };
+
 
 /*--This little function will stop a user from being able to click an answer if the website isn’t ready for it. 
 This function can go either two ways, chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 

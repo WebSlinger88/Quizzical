@@ -97,6 +97,19 @@ main {
     float: right;
 }
 
+.progression-bar {
+    width: 100%;
+    height: 1.6rem;
+    border: 0.2rem solid #CA9E65;
+    border-radius: 2rem;
+}
+
+.progression {
+    width: 0%;
+    height: 1.2rem;
+    background-color: #CA9E65;
+    border-radius: 2rem;
+}
 /* -- Footer -- */
 
 .footer {
