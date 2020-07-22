@@ -119,6 +119,16 @@ main {
     font-size: 4.5vh;
 }
 
+input {
+    width: 100%;
+    font-size: 2.75vh;
+    background-color: #800080;
+    color: #CA9E65;
+    border: 0.2rem solid #CA9E65;
+    border-radius: 2rem;
+    box-shadow: 0 0.1rem 1.3rem 0 rgba(203, 158, 101, 0.8);
+    text-align: center;
+}
 
 /* -- Footer -- */
 
