@@ -12,8 +12,7 @@ const quizQ = document.getElementById("quiz-question");
 const quizA = Array.from(document.getElementsByClassName("quiz-answer"));
 const tallyQ = document.getElementById("questionTally");
 const tallyS = document.getElementById("scoreTally");
-const progBar = document.getElementsByClassName("progression-bar");
-const currentProg = document.getElementsByClassName("progression");
+const currentProg = document.getElementById("progression");
 
 /*--I have created another handful of variables which will each have a role to play--*/ 
 
@@ -97,6 +96,12 @@ a new page will be loaded. In this instance the completed.html page will be load
 /*--The game’s qNum will start at 0 but when we start playing the game qNum++ will increment the game’s question number to 1 and so on
 until we reach our limit. The limit is set in the const variable totalQuests--*/
 
+/*--The progress bar will fill as each question is answered. We call the currentProg variable which is linked to the progression id within questions.html
+and we style it's width. The width for the child element is currently set to 0% and as each question is answered it shall move up a percentage depending on
+how many questions there are in the totalQuests variable. So we take the qNum (question number) which starts at 1 and it's going to divide by the totalQuests
+(total amount of questions) and we're going to times it by 100. So for example if we had 3 questions and we answered one question, the bar would raise by
+33.33% whereas if we only multiplied it by 10 then the bar would only raise by 3.33% which is obviously too low!--*/
+
 /*--In order for the question tally to update after we answer a question I've set the tallyQ innerText (this basically places it within the HTML document) to equal
 the current question number over the total amount of questions. Long story short - The questionTally Id element (tallyQ) within questions.html will display the current question
 over the total amount of questions, for example: 4/10. This will update dynamically depending on which question we're currently on. The totalQuests number will stay
@@ -126,8 +131,9 @@ nextQuest = function() {
         return window.location.assign("/completed.html"); 
     } 
 
+    
     qNum++; 
-    // currentProg.style.width = `${(qNum / totalQuests) * 100}%`;
+    currentProg.style.width = `${((qNum - 1) / totalQuests) * 100}%`;
     tallyQ.innerText = qNum + "/" + totalQuests;
     
     const qCatalogue = Math.floor(Math.random() * availableQ.length); 
