@@ -111,6 +111,15 @@ main {
     background-color: #CA9E65;
     border-radius: 2rem;
 }
+
+/* -- Completed -- */
+
+.congrats {
+    text-transform: uppercase;
+    font-size: 4.5vh;
+}
+
+
 /* -- Footer -- */
 
 .footer {
