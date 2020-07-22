@@ -128,7 +128,7 @@ answerDelay is set to true so that when the question has loaded we’re giving p
 
 nextQuest = function() { 
     if (availableQ.length === 0 || qNum >= totalQuests) { 
-        return window.location.assign("/completed.html"); 
+        return window.location.assign("./completed.html"); 
     } 
 
     
