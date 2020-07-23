@@ -130,6 +130,10 @@ input {
     text-align: center;
 }
 
+button:disabled {
+    cursor: not-allowed !important;
+}
+
 /* -- Footer -- */
 
 .footer {
