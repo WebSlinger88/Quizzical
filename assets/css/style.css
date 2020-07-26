@@ -130,8 +130,9 @@ input {
     text-align: center;
 }
 
-button:disabled {
+button[disabled]:hover {
     cursor: not-allowed !important;
+    box-shadow: none;
 }
 
 /* -- Footer -- */

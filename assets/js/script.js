@@ -93,6 +93,11 @@ gameBegin = function() {
 /*--The function below basically says, if there are no more available questions in the availableQ array OR the totalQuests limit has been reached, 
 a new page will be loaded. In this instance the completed.html page will be loaded and that will tell the user that they have completed the game--*/ 
 
+/*--We want to save a user's score to local storage so that we can access it when we complete the quiz and we can use it then to add to the leaderboard.
+What I have done is for local storage I have set item. The setItem method sets the value of the specified Storage Object item. In this case I've set the
+item as newScore and it will have the value of score. Note that the value of score is set to 0 at the beginning of the game and will obviously increase
+as the game goes on. When the game ends that score will be locally saved as the value--*/
+
 /*--The game’s qNum will start at 0 but when we start playing the game qNum++ will increment the game’s question number to 1 and so on
 until we reach our limit. The limit is set in the const variable totalQuests--*/
 
@@ -127,7 +132,8 @@ find it’s dataset-number and display the answers relating to the speficic curr
 answerDelay is set to true so that when the question has loaded we’re giving permission to the user to go ahead and answer--*/
 
 nextQuest = function() { 
-    if (availableQ.length === 0 || qNum >= totalQuests) { 
+    if (availableQ.length === 0 || qNum >= totalQuests) {
+        localStorage.setItem("newScore", score);
         return window.location.assign("./completed.html"); 
     } 
 
@@ -140,7 +146,7 @@ nextQuest = function() {
     currentQ = availableQ[qCatalogue]; 
     quizQ.innerText = currentQ.question;
 
-    quizA.forEach( answer => { 
+    quizA.forEach(function(answer) { 
         const number = answer.dataset['number']; 
         answer.innerText = currentQ['answer' + number]; 
     });
@@ -164,8 +170,8 @@ chose a correct or incorrect answer. if the user chose correctly, the increaseSc
 be added. if the user chose incorrectly then the decreaseScore function shall be called and points will be decucted. These points
 are dictated by the variables previously set (correctPoints / incorrectPoints)--*/
 
-quizA.forEach(answer => { 
-    answer.addEventListener("click", e => { 
+quizA.forEach(function(answer) { 
+    answer.addEventListener("click", function(e) { 
         if (!answerDelay) return;
         answerDelay = false; 
 
@@ -184,7 +190,7 @@ quizA.forEach(answer => {
 
         chosenAnswer.parentElement.classList.add(colorChange);
 
-        setTimeout(() => {
+        setTimeout(function() {
             chosenAnswer.parentElement.classList.remove(colorChange);
             nextQuest(); 
         }, 1200);
@@ -195,12 +201,12 @@ quizA.forEach(answer => {
 via the tallyS variable. These functions are called above in our if() statements. If the answer is correct, award points.
 If the answer is incorrect, deduct points. This is made possible by stating score += / -= num--*/
 
-increaseScore = num => {
+increaseScore = function(num) {
     score += num;
     tallyS.innerText = score;
 };
 
-decreaseScore = num => {
+decreaseScore = function(num) {
     score -= num;
     tallyS.innerText = score;
 }

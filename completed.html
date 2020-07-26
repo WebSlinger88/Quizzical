@@ -50,10 +50,11 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
                 <img class="home-logo d-block mx-auto img-fluid mt-md-5" src="./assets/images/home-logo.png" alt="quizzical-main-logo">
 
                 <h1 class="congrats mt-3">congratulations!</h1>
-                <h2 class="yourScore mt-2" id="endScore">You Scored</h2>
+
+                <h2 id="endScore"></h2>
 
                 <form>
-                    <input class="input w-75 mt-3 mb-2" type="text" name="username" id="username" placeholder="Enter Username">
+                    <input class="input w-75 mt-3 mb-2" type="text" name="username" id="name" placeholder="Enter Name">
                     <button type="submit" class="btn w-75 mt-2" id="saveScore" onclick="saveToBoard(event)" disabled>Save Score</button>
                 </form>
 
@@ -90,7 +91,7 @@ The purpose of jQuery is to make it much easier to use JavaScript on your websit
 We place it at the bottom of the body element because it gives the HTML time to load before any of the JavaScript loads, which can prevent errors, 
 and speed up website response time. -->
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/completed.js"></script>
 
 </body>
 </html>
