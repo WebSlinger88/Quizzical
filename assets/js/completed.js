@@ -8,3 +8,8 @@ const name = document.getElementById("name");
 const saveScore = document.getElementById("saveScore");
 const endScore = document.getElementById("endScore");
 const newScore = localStorage.getItem("newScore");
+
+/*--The code below allows us to take the score we accumulated over the course of the quiz and display it on the completed.html
+page with a little added text for a more user friendly experience--*/
+
+endScore.innerText = "You Scored:" + " " + newScore + "!";
