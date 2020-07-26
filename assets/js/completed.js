@@ -13,3 +13,14 @@ const newScore = localStorage.getItem("newScore");
 page with a little added text for a more user friendly experience--*/
 
 endScore.innerText = "You Scored:" + " " + newScore + "!";
+
+/*--The code below says that we can only click the saveScore button when something has been written in the name field. If nothing
+is typed into the name field then the saveScore button will remain disabled--*/
+
+name.addEventListener("keyup", function() {
+    saveScore.disabled = !name.value;
+});
+
+saveToBoard = function(e) {
+    e.preventDefault();
+}
