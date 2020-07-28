@@ -46,10 +46,15 @@ saveToBoard = function(e) {
         name: name.value,
         score: newScore
     };
+
     results.push(record);
     results.sort(function(a,b){
         return b.score - a.score;
     });
+
     results.splice(10);
+
+    localStorage.setItem("results", JSON.stringify(results));
+    
     console.log(results);
 };
