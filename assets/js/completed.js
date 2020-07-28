@@ -32,6 +32,9 @@ name.addEventListener("keyup", function() {
 are saved within a variable called record and this data is pushed from the results variable which is called from local storage
 in the form of an object which we created using JSON.parse previously--*/
 
+/*--I have also added a function within the saveToBoard function. This will sort scores. What is happening is the results variable
+will be sorted so that if the b.score is higher than the a.score then put b before a--*/
+
 saveToBoard = function(e) {
     e.preventDefault();
 
@@ -40,5 +43,9 @@ saveToBoard = function(e) {
         score: newScore
     };
     results.push(record);
+    results.sort(function(a,b){
+        return b.score - a.score;
+    });
+     
     console.log(results);
 };
