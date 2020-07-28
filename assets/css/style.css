@@ -148,6 +148,16 @@ button[disabled]:hover {
     font-size: 2vh; 
 } 
 
+.lb-name { 
+    width: 90%; 
+    float: left; 
+    background-color: #800080; 
+    color: #CA9E65; 
+    border: 0.2rem solid #CA9E65; 
+    border-radius: 2rem; 
+    margin-bottom: 0.5rem;
+} 
+
 /* -- Footer -- */
 
 .footer {
