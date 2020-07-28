@@ -4,6 +4,8 @@ is set to disabled. This has been disabled so that users cannot save a score wit
 here pulls data from our localStorage. A user's score is saved into local storage so that we can display it on our completed.html
 page. The totalResults variable will ultimately only allow 10 results to be displayed on our leaderboard--*/
 
+/*--JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and transporting data--*/
+
 /*--When we receive data from a web server the data is always a string, in this instance I don't want the data to be a string,
 I want the data to be an object so that I can display the data in that object on the leaderboard page. This is where JSON.parse
 comes into the mix. JSON.parse will convert the string into an object. If I didn't have anything saved in local storage and I 
@@ -47,6 +49,8 @@ This will save the results permanently instead of them disappearing on us and be
 We want users to be able to view their scores for the rest of their lives! 
 Well... as long as they're in the top 10 that is!--*/
 
+/*--When save button is clicked, leaderboard.html page will load--*/
+
 saveToBoard = function(e) {
     e.preventDefault();
 
@@ -64,5 +68,5 @@ saveToBoard = function(e) {
 
     localStorage.setItem("results", JSON.stringify(results));
 
-    console.log(results);
+    window.location.assign("/leaderboard.html");
 };
