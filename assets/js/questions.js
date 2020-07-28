@@ -40,34 +40,7 @@ const totalQuests = 3;
 /*--quizQuests is a variable which contains a handful of questions in the form of objects. 
 Each object consists of one question and four possible answers. The object also contains the actual answer--*/ 
 
-let quizQuests = [ 
-    { 
-        question: "What is the hottest object in our solar system?", 
-        answer1: "Moon", 
-        answer2: "Venus", 
-        answer3: "Sun", 
-        answer4: "Titan", 
-        answer: 3 
-    }, 
-
-    { 
-        question: "What year did the first human walk on the moon?", 
-        answer1: "1969", 
-        answer2: "1966", 
-        answer3: "1971", 
-        answer4: "1962", 
-        answer: 1 
-    }, 
-
-    { 
-        question: "Which planet has an ongoing storm named The Great Red Spot?", 
-        answer1: "Saturn", 
-        answer2: "Jupiter", 
-        answer3: "Uranus", 
-        answer4: "Mercury", 
-        answer: 2 
-    } 
-]; 
+let quizQuests = []; 
 
 /*GAME BEGIN FUNCTION*/
 
