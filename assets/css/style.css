@@ -114,7 +114,7 @@ main {
 
 /* -- Completed -- */
 
-.congrats {
+.cg-title {
     text-transform: uppercase;
     font-size: 4.5vh;
 }
@@ -133,6 +133,13 @@ input {
 button[disabled]:hover {
     cursor: not-allowed !important;
     box-shadow: none;
+}
+
+/* -- Leaderboard -- */
+
+.lb-title {
+    text-transform: uppercase;
+    font-size: 4.5vh;
 }
 
 /* -- Footer -- */
