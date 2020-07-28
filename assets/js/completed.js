@@ -28,6 +28,17 @@ name.addEventListener("keyup", function() {
     saveScore.disabled = !name.value;
 });
 
+/*--The code below is a function that when the save button is clicked, the user's name and score is displayed. The name and score
+are saved within a variable called record and this data is pushed from the results variable which is called from local storage
+in the form of an object which we created using JSON.parse previously--*/
+
 saveToBoard = function(e) {
     e.preventDefault();
-}
+
+    const record = {
+        name: name.value,
+        score: newScore
+    };
+    results.push(record);
+    console.log(results);
+};
