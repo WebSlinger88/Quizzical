@@ -5,9 +5,10 @@ here pulls data from our localStorage. A user's score is saved into local storag
 page. The totalResults variable will ultimately only allow 10 results to be displayed on our leaderboard--*/
 
 /*--When we receive data from a web server the data is always a string, in this instance I don't want the data to be a string,
-I want the data to be an object so that I can display the data in that object on the leaderboard page. If I didn't have anything
-saved in local storage and I tried to run the application the console would flag as null. So the code below will try and pull
-whatever is in local storage OR it will give us an empty array. At no point do I want the console to return as null--*/
+I want the data to be an object so that I can display the data in that object on the leaderboard page. This is where JSON.parse
+comes into the mix. JSON.parse will convert the string into an object. If I didn't have anything saved in local storage and I 
+tried to run the application the console would flag as null. So the code below will try and pull whatever is in local storage 
+OR it will give us an empty array. At no point do I want the console to return as null--*/
 
 const name = document.getElementById("name");
 const saveScore = document.getElementById("saveScore");
@@ -39,6 +40,13 @@ will be sorted so that if the b.score is higher than the a.score then put b befo
 list if a user achieves a greater score than what is already there. If I didn't add splice to this function then the list of scores
 would never update properly--*/
 
+/*--Code as been added to update results in local storage as a string using JSON.stringify. When we send data to a web server, the
+data has to be a string. Remember earlier we pulled data from local storage and it was already a string? And we used JSON.parse to
+convert it into an object we can use? Well now we have done that in reverse! It wont work otherwise! 
+This will save the results permanently instead of them disappearing on us and being lost forever! 
+We want users to be able to view their scores for the rest of their lives! 
+Well... as long as they're in the top 10 that is!--*/
+
 saveToBoard = function(e) {
     e.preventDefault();
 
@@ -55,6 +63,6 @@ saveToBoard = function(e) {
     results.splice(10);
 
     localStorage.setItem("results", JSON.stringify(results));
-    
+
     console.log(results);
 };
