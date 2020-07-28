@@ -139,13 +139,13 @@ button[disabled]:hover {
 
 .lb-title {
     text-transform: uppercase;
-    font-size: 5.5vh;
+    font-size: 6vh;
 }
 
 #lb-list { 
     list-style: none; 
     padding-left: 0; 
-    font-size: 2vh; 
+    font-size: 2.25vh; 
 } 
 
 .lb-name { 
