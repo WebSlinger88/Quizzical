@@ -35,6 +35,10 @@ in the form of an object which we created using JSON.parse previously--*/
 /*--I have also added a function within the saveToBoard function. This will sort scores. What is happening is the results variable
 will be sorted so that if the b.score is higher than the a.score then put b before a--*/
 
+/*--I've spliced the results variable at (10) which matches the totalResults variable. This will remove the bottom score from the
+list if a user achieves a greater score than what is already there. If I didn't add splice to this function then the list of scores
+would never update properly--*/
+
 saveToBoard = function(e) {
     e.preventDefault();
 
