@@ -149,13 +149,23 @@ button[disabled]:hover {
 } 
 
 .lb-name { 
-    width: 90%; 
+    width: 85%; 
     float: left; 
     background-color: #800080; 
     color: #CA9E65; 
     border: 0.2rem solid #CA9E65; 
     border-radius: 2rem; 
     margin-bottom: 0.5rem;
+} 
+
+.lb-score { 
+    width: 15%; 
+    float: right; 
+    background-color: #CA9E65; 
+    color: #800080; 
+    border: 0.2rem solid #CA9E65; 
+    border-radius: 2rem; 
+    margin-bottom: 0.5rem; 
 } 
 
 /* -- Footer -- */
