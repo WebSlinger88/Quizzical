@@ -46,6 +46,6 @@ saveToBoard = function(e) {
     results.sort(function(a,b){
         return b.score - a.score;
     });
-     
+    results.splice(10);
     console.log(results);
 };
