@@ -142,6 +142,12 @@ button[disabled]:hover {
     font-size: 5.5vh;
 }
 
+#lb-list { 
+    list-style: none; 
+    padding-left: 0; 
+    font-size: 2vh; 
+} 
+
 /* -- Footer -- */
 
 .footer {
