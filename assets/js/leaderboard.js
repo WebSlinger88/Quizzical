@@ -17,3 +17,8 @@ they'll be styled separately within style.css--*/
   .map(function(score){ 
     return `<li class="lb-name">${score.name}</li>` + `<li class="lb-score">${score.score}</li>`; 
   }) 
+
+/*--The function above wasn't displaying lists properly so what I've included is a .join("") which returns the above array into
+a string which in turn displays correctly on our page. Note that this doesn't change the original array at all--*/
+
+  .join(""); 
