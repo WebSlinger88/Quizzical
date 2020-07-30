@@ -88,7 +88,6 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
             });
             return convertedQuest;
         });
-        
         gameBegin();
     })
 
@@ -156,6 +155,7 @@ find it’s dataset-number and display the answers relating to the speficic curr
 answerDelay is set to true so that when the question has loaded we’re giving permission to the user to go ahead and answer--*/
 
 nextQuest = function () {
+
     if (availableQ.length === 0 || qNum >= totalQuests) {
         localStorage.setItem("newScore", score);
         return window.location.assign("./completed.html");
@@ -178,6 +178,31 @@ nextQuest = function () {
     answerDelay = true;
 
 };
+
+/*--I've created the function below for question.html's timer. The first line will deduct 1 from the set time (10).
+The first if statement says if the time is 10 or under, display it on the html page.
+The second if statement says when the time goes under 1, clear the interval it's currently set at
+and decrease the score. I then want it to reset it's time to 10 and call the nextQuest function. The setInterval
+for the countDown function is 1000ms. This is deducting 1 from time every 1 second--*/
+
+countDown = function () {
+
+    time = time - 1;
+
+    if (time < 10) {
+        timer.innerHTML = time;
+    }
+
+    if (time < 1) {
+        window.clearInterval(update);
+        decreaseScore(incorrectPoints);
+        time = 10;
+        nextQuest();
+    }
+}
+
+update = setInterval("countDown()", 1000);
+
 
 /*--This little function will stop a user from being able to click an answer if the website isn’t ready for it. 
 This function can go either two ways, chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 
