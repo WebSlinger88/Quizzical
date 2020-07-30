@@ -52,17 +52,34 @@ and I've created a function, within that function I will transform it to the cor
 called convertedQuest and it's going to be an object with a question property which is obviously coming from the loadedQuest as 
 stated before--*/
 
-fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
+/*--Next up I've created a variable called possibleAnswers. I've used the spread operator again and within that I've called the
+loadedQuest and all of its incorrect answers. The API data we have received refers to their incorrect answers as incorrect_answers
+and their correct answers as correct_answers. So what this spread operator will do is give us an array of incorrect answers. What I 
+really wanted to do was get these incorrect answers and the correct answer to display randomly on the page so that every time the 
+game is played and a specific question is displayed, the answer should display in a different order. To do this Math.floor(Math.random)
+has been used. I have asked for a random index between 0 and 4 because we have 4 possible answers and then I've spliced the correct answer.
+What this has essentially done is taken all of the incorrect answers and the correct answer and put them into the possibleAnswers variable
+with the correct answer being in a random possition within the object. --*/
 
+fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
     .then(function (res) {
         return res.json();
     })
-
     .then(function (loadedQuest) {
         quizQuests = loadedQuest.results.map(function (loadedQuest) {
             const convertedQuest = {
                 question: loadedQuest.question,
             };
+
+            const possibleAnswers = [...loadedQuest.incorrect_answers];
+            convertedQuest.answer = Math.floor(Math.random() * 4) + 1;
+            possibleAnswers.splice(
+                convertedQuest.answer - 1,
+                0,
+                loadedQuest.correct_answer
+            );
+    })
+
 
 /*GAME BEGIN FUNCTION*/
 
