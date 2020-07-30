@@ -69,6 +69,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
     .then(function (res) {
         return res.json();
     })
+
     .then(function (loadedQuest) {
         quizQuests = loadedQuest.results.map(function (loadedQuest) {
             const convertedQuest = {
@@ -88,6 +89,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
             });
             return convertedQuest;
         });
+
         gameBegin();
     })
 
@@ -197,8 +199,8 @@ countDown = function () {
 
     if (time < 1) {
         decreaseScore(incorrectPoints);
-        nextQuest();
         setInterval("countDown()", 1000);
+        nextQuest();
         window.clearInterval(update);
     }
 }
