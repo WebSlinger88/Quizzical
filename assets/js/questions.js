@@ -61,6 +61,10 @@ has been used. I have asked for a random index between 0 and 4 because we have 4
 What this has essentially done is taken all of the incorrect answers and the correct answer and put them into the possibleAnswers variable
 with the correct answer being in a random possition within the object. --*/
 
+/*--Finally I've iterated through the possibleAnswers and for each answer and the index that it's at I've basically said I want to put them
+as answer 1, 2, 3 & 4 and to do that I'm going to dynamically get the property "answer" plus whatever the index is and then assign it to answer.
+I've then returned the convertedQuest to display those questions and I've called the gameBegin function at the bottom.--*/
+
 fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
     .then(function (res) {
         return res.json();
@@ -78,6 +82,14 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
                 0,
                 loadedQuest.correct_answer
             );
+
+            possibleAnswers.forEach(function (answer, index) {
+                convertedQuest['answer' + (index + 1)] = answer;
+            });
+            return convertedQuest;
+        });
+
+        gameBegin();
     })
 
 
