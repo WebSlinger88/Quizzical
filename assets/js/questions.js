@@ -46,13 +46,24 @@ let quizQuests = [];
 transform each question and answer fetched into the format we're using for the Quizzical website. Please see the questions.json file within
 the Quizzical directory. What I want is for those fetched questions to be placed into my questions.json file and then we'll use
 those questions because they'll be in the correct format. The function below is going to ask for a response and that response is 
-going to be a return of a json version of the data--*/
+going to be a return of a json version of the data. Ultimately I want the quizQuests variable to hold all of this data. 
+I've used the map method again to iterate through the arrays. So the questions I've taken from the API will be within loadedQuest 
+and I've created a function, within that function I will transform it to the correct format. A variable was made to hold this data 
+called convertedQuest and it's going to be an object with a question property which is obviously coming from the loadedQuest as 
+stated before--*/
 
 fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
+
     .then(function (res) {
         return res.json();
     })
-    
+
+    .then(function (loadedQuest) {
+        quizQuests = loadedQuest.results.map(function (loadedQuest) {
+            const convertedQuest = {
+                question: loadedQuest.question,
+            };
+
 /*GAME BEGIN FUNCTION*/
 
 /*--This is the gameBegin function which is the function that’ll be used at the beginning of the game. 
