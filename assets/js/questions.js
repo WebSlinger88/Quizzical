@@ -177,7 +177,7 @@ nextQuest = function () {
     availableQ.splice(qCatalogue, 1);
     answerDelay = true;
 
-    setInterval("countDown()", 1000);
+    time = 10;
     countDown();
 };
 
@@ -196,10 +196,10 @@ countDown = function () {
     }
 
     if (time < 1) {
-        window.clearInterval(update);
         decreaseScore(incorrectPoints);
-        time = 10;
         nextQuest();
+        setInterval("countDown()", 1000);
+        window.clearInterval(update);
     }
 }
 
