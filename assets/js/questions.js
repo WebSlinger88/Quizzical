@@ -42,6 +42,17 @@ Each object consists of one question and four possible answers. The object also 
 
 let quizQuests = [];
 
+/*--Here I've used fetch and pasted in a URL from a free quiz database API (https://opentdb.com/). What I needed to do next was 
+transform each question and answer fetched into the format we're using for the Quizzical website. Please see the questions.json file within
+the Quizzical directory. What I want is for those fetched questions to be placed into my questions.json file and then we'll use
+those questions because they'll be in the correct format. The function below is going to ask for a response and that response is 
+going to be a return of a json version of the data--*/
+
+fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
+    .then(function (res) {
+        return res.json();
+    })
+    
 /*GAME BEGIN FUNCTION*/
 
 /*--This is the gameBegin function which is the function that’ll be used at the beginning of the game. 
