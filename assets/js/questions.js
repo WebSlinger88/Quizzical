@@ -88,7 +88,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
             });
             return convertedQuest;
         });
-
+        
         gameBegin();
     })
 
@@ -108,6 +108,7 @@ gameBegin = function () {
     score = 0;
     qNum = 0;
     availableQ = [...quizQuests];
+    time = 10;
     nextQuest();
 };
 
