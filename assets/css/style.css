@@ -1,5 +1,4 @@
-/*The below code allows us to connect with Google Fonts. Amarante has been selected for our main font. Roboto for fallback.*/
-@import url('https://fonts.googleapis.com/css2?family=Amarante|Roboto&display=swap:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Amarante&display=swap:100,200,300,400,500,600,700');
 
 /* -- All Pages -- */
 
@@ -7,7 +6,7 @@
 body,html {
     background-color: #800080;
     text-align: center;
-    font-family: Amarante, Roboto;
+    font-family: 'Amarante', sans-serif;
     color: #CA9E65;
     min-height: 100vh;
     display: flex;
@@ -38,7 +37,7 @@ main {
 
 .home-text {
     text-align: center;
-    font-size: 1.8vh;
+    font-size: 1.7vh;
 }
 
 .btn {
@@ -90,24 +89,20 @@ main {
     color: #FFFFFF;
 }
 
-.detail-feature-1 {
-    float: left;
-}
-
-.detail-feature-2 {
-    float: right;
+.detail-feature h1 {
+    font-size: 3.25vh;
 }
 
 #progression-bar {
     width: 100%;
-    height: 1.6rem;
-    border: 0.2rem solid #CA9E65;
+    height: 1.55rem;
+    border: 0.15rem solid #CA9E65;
     border-radius: 2rem;
 }
 
 #progression {
     width: 0%;
-    height: 1.2rem;
+    height: 1.3rem;
     background-color: #CA9E65;
     border-radius: 2rem;
 }

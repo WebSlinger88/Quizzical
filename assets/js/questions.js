@@ -1,10 +1,10 @@
 /*VARIABLES*/
 
 /*--I have created two variables which will pull information from the questions.html file via Id and Class name. 
-They will reference the quiz questions and quiz answers. I want the answers to be an array so that we have four different options to choose from--*/ 
+They will reference the quiz questions and quiz answers. I want the answers to be an array so that we have four different options to choose from--*/
 
 /*--I have created another two variables which will pull information from the questions.html file via Id. 
-They will reference the number of questions a user is currently on and the users score--*/ 
+They will reference the number of questions a user is currently on and the users score--*/
 
 /*--I've chosen 'const' as my variable because it can't and won't be changed, unlike let and var where their contents can be changed--*/
 
@@ -14,14 +14,14 @@ const tallyQ = document.getElementById("questionTally");
 const tallyS = document.getElementById("scoreTally");
 const currentProg = document.getElementById("progression");
 
-/*--I have created another handful of variables which will each have a role to play--*/ 
+/*--I have created another handful of variables which will each have a role to play--*/
 
-/*--currentQ will be our current question which will be an object because it can potentially have many values--*/ 
-/*--answerDelay will be in place so that there will be a slight delay before a user can chose another answer--*/ 
-/*--The score variable will be the users score which will start at 0--*/ 
-/*--qNum is a variable that will determine which question number the user is on--*/ 
+/*--currentQ will be our current question which will be an object because it can potentially have many values--*/
+/*--answerDelay will be in place so that there will be a slight delay before a user can chose another answer--*/
+/*--The score variable will be the users score which will start at 0--*/
+/*--qNum is a variable that will determine which question number the user is on--*/
 /*--availableQ is an empty array which will be an available copy of our question set, we will take questions out 
-of our availableQ array as the user uses them. The user will be presented with a unique question each time--*/ 
+of our availableQ array as the user uses them. The user will be presented with a unique question each time--*/
 
 let currentQ = {};
 let answerDelay = false;
@@ -29,18 +29,18 @@ let score = 0;
 let qNum = 0;
 let availableQ = [];
 
-/*--The correctPoints variable is how many points will be awarded for a correct answer--*/ 
-/*--The incorrectPoints variable is how many points will be deducted for a wrong answer--*/ 
-/*--The totalQuests variable set the limit for how many questions a user will be given--*/ 
+/*--The correctPoints variable is how many points will be awarded for a correct answer--*/
+/*--The incorrectPoints variable is how many points will be deducted for a wrong answer--*/
+/*--The totalQuests variable set the limit for how many questions a user will be given--*/
 
 const correctPoints = 10;
-const incorrectPoints = 5;
-const totalQuests = 3;
+const incorrectPoints = 3;
+const totalQuests = 10;
 
 /*--quizQuests is a variable which contains a handful of questions in the form of objects. 
-Each object consists of one question and four possible answers. The object also contains the actual answer--*/ 
+Each object consists of one question and four possible answers. The object also contains the actual answer--*/
 
-let quizQuests = []; 
+let quizQuests = [];
 
 /*GAME BEGIN FUNCTION*/
 
@@ -48,23 +48,22 @@ let quizQuests = [];
 We’ll start on qNum (question number) 0 and we’ll start with a score of 0. 
 availableQ is our empty array which will copy our questions from our quizQuests array using the spread operator. 
 The spread operator [...quizQuests] takes an array, spreads out each of its items and puts them into a new array (availableQ). 
-Ultimately when availableQ runs out of items, the game will finish. Either that or when totalQuests reaches it’s limit, the game will end.--*/ 
+Ultimately when availableQ runs out of items, the game will finish. Either that or when totalQuests reaches it’s limit, the game will end.--*/
 
 /*--the nextQuest function will be called within the gameBegin function to initiate the next question within the game. 
-Basically when we have started the game and chosen our first answer, we’ll move onto the next question--*/ 
+Basically when we have started the game and chosen our first answer, we’ll move onto the next question--*/
 
-gameBegin = function() { 
-    score = 0; 
-    qNum = 0; 
-    availableQ = [...quizQuests]; 
-
-    nextQuest(); 
-}; 
+gameBegin = function () {
+    score = 0;
+    qNum = 0;
+    availableQ = [...quizQuests];
+    nextQuest();
+};
 
 /*NEXT QUESTION FUNCTION*/
 
 /*--The function below basically says, if there are no more available questions in the availableQ array OR the totalQuests limit has been reached, 
-a new page will be loaded. In this instance the completed.html page will be loaded and that will tell the user that they have completed the game--*/ 
+a new page will be loaded. In this instance the completed.html page will be loaded and that will tell the user that they have completed the game--*/
 
 /*--We want to save a user's score to local storage so that we can access it when we complete the quiz and we can use it then to add to the leaderboard.
 What I have done is for local storage I have set item. The setItem method sets the value of the specified Storage Object item. In this case I've set the
@@ -80,7 +79,7 @@ how many questions there are in the totalQuests variable. So we take the qNum (q
 (total amount of questions) and we're going to times it by 100. So for example if we had 3 questions and we answered one question, the bar would raise by
 33.33% whereas if we only multiplied it by 10 then the bar would only raise by 3.33% which is obviously too low!--*/
 
-/*--In order for the question tally to update after we answer a question I've set the tallyQ innerText (this basically places it within the HTML document) to equal
+/*--In order for the question tally to update after we answer a question I've set the tallyQ innerHTML (this basically places it within the HTML document) to equal
 the current question number over the total amount of questions. Long story short - The questionTally Id element (tallyQ) within questions.html will display the current question
 over the total amount of questions, for example: 4/10. This will update dynamically depending on which question we're currently on. The totalQuests number will stay
 the same throughout the entire game because it will be set to a specific number using a const variable--*/
@@ -95,39 +94,38 @@ any numbers following it and leave us with the number 2. Whilst playing the game
 To reference this I have placed this statement within a variable called qCatalogue--*/
 
 /*--Our current question will be the available question that has been selected via our qCatalogue hence the currentQ = availableQ[qCatalogue] next we will take 
-the quizQ’s (quiz question’s) HTML element, the innerText, and make it the currentQ (current question) --*/ 
+the quizQ’s (quiz question’s) HTML element, the innerHTML, and make it the currentQ (current question) --*/
 
 /*--There’s a little function within the nextQuest function that will help us generate the answers for each question. Within the questions.html file I’ve placed 
 a data-number within each question. Here we are referencing that data-number. This function is basically saying find the “answer” within the quizA variable and 
-find it’s dataset-number and display the answers relating to the speficic currentQ (current question)--*/ 
+find it’s dataset-number and display the answers relating to the speficic currentQ (current question)--*/
 
 /*--Finally we’re taking the availableQ array and we’re splicing out the question that we just used so that we don’t randomly generate the same question twice. 
 answerDelay is set to true so that when the question has loaded we’re giving permission to the user to go ahead and answer--*/
 
-nextQuest = function() { 
+nextQuest = function () {
     if (availableQ.length === 0 || qNum >= totalQuests) {
         localStorage.setItem("newScore", score);
-        return window.location.assign("./completed.html"); 
-    } 
+        return window.location.assign("./completed.html");
+    }
 
-    
-    qNum++; 
+    qNum++;
     currentProg.style.width = `${((qNum - 1) / totalQuests) * 100}%`;
-    tallyQ.innerText = qNum + "/" + totalQuests;
-    
-    const qCatalogue = Math.floor(Math.random() * availableQ.length); 
-    currentQ = availableQ[qCatalogue]; 
-    quizQ.innerText = currentQ.question;
+    tallyQ.innerHTML = qNum + "/" + totalQuests;
 
-    quizA.forEach(function(answer) { 
-        const number = answer.dataset['number']; 
-        answer.innerText = currentQ['answer' + number]; 
+    const qCatalogue = Math.floor(Math.random() * availableQ.length);
+    currentQ = availableQ[qCatalogue];
+    quizQ.innerHTML = currentQ.question;
+
+    quizA.forEach(function (answer) {
+        const number = answer.dataset['number'];
+        answer.innerHTML = currentQ['answer' + number];
     });
 
-        availableQ.splice(qCatalogue, 1); 
-        answerDelay = true; 
-};
+    availableQ.splice(qCatalogue, 1);
+    answerDelay = true;
 
+};
 
 /*--This little function will stop a user from being able to click an answer if the website isn’t ready for it. 
 This function can go either two ways, chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 
@@ -136,36 +134,36 @@ This will change the colour of the buttons to either green or red depending on w
 Text will also become white. I've chosen this because the original black text clashed with my chosen colours.
 I've given this functon a setTimeout so that our correct/incorrect colours hang for just little over a second (1200ms).
 This gives the user recognition that they have answered correctly or incorrectly.
-Once an answer has been chosen the nextQuest() function will engage--*/ 
+Once an answer has been chosen the nextQuest() function will engage--*/
 
 /*--Within the function below we have two if statements. These will increase or decrease points depending on whether the user
 chose a correct or incorrect answer. if the user chose correctly, the increaseScore function shall be called and points will
 be added. if the user chose incorrectly then the decreaseScore function shall be called and points will be decucted. These points
 are dictated by the variables previously set (correctPoints / incorrectPoints)--*/
 
-quizA.forEach(function(answer) { 
-    answer.addEventListener("click", function(e) { 
+quizA.forEach(function (answer) {
+    answer.addEventListener("click", function (e) {
         if (!answerDelay) return;
-        answerDelay = false; 
+        answerDelay = false;
 
-        const chosenAnswer = e.target; 
-        const chosenCorrect = chosenAnswer.dataset["number"]; 
-            
+        const chosenAnswer = e.target;
+        const chosenCorrect = chosenAnswer.dataset["number"];
+
         const colorChange = chosenCorrect == currentQ.answer ? "correct" : "incorrect";
 
-        if(colorChange === "correct") {
+        if (colorChange === "correct") {
             increaseScore(correctPoints);
         }
 
-        if(colorChange === "incorrect") {
+        if (colorChange === "incorrect") {
             decreaseScore(incorrectPoints);
         }
 
         chosenAnswer.parentElement.classList.add(colorChange);
 
-        setTimeout(function() {
+        setTimeout(function () {
             chosenAnswer.parentElement.classList.remove(colorChange);
-            nextQuest(); 
+            nextQuest();
         }, 1200);
     });
 });
@@ -174,16 +172,12 @@ quizA.forEach(function(answer) {
 via the tallyS variable. These functions are called above in our if() statements. If the answer is correct, award points.
 If the answer is incorrect, deduct points. This is made possible by stating score += / -= num--*/
 
-increaseScore = function(num) {
+increaseScore = function (num) {
     score += num;
     tallyS.innerText = score;
 };
 
-decreaseScore = function(num) {
+decreaseScore = function (num) {
     score -= num;
     tallyS.innerText = score;
 }
-
-/*--This is where we call the gameBegin function. It's at the bottom so that it gets called first before anything else--*/ 
-
-gameBegin(); 
