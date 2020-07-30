@@ -177,6 +177,8 @@ nextQuest = function () {
     availableQ.splice(qCatalogue, 1);
     answerDelay = true;
 
+    setInterval("countDown()", 1000);
+    countDown();
 };
 
 /*--I've created the function below for question.html's timer. The first line will deduct 1 from the set time (10).
