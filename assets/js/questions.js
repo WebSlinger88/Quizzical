@@ -6,6 +6,13 @@ They will reference the quiz questions and quiz answers. I want the answers to b
 /*--I have created another two variables which will pull information from the questions.html file via Id. 
 They will reference the number of questions a user is currently on and the users score--*/
 
+/*--Another variable has been added to manage the progress bar. This variable also links to an Id within questions.html.
+I will reference to this variable within questions.js in order to fill the progress bar as the game is played--*/
+
+/*--Two more variables added. LoadingSpinner and quiz. Both link to Ids within questions.html. Both are called upon within
+questions.js. Ultimately these two variables will be responsible for the loading spinner appearing and disappearing when
+we are loading questions from the API. This avoids any blank screens or empty fields. This has been done for better UX.--*/
+
 /*--I've chosen 'const' as my variable because it can't and won't be changed, unlike let and var where their contents can be changed--*/
 
 const quizQ = document.getElementById("quiz-question");
@@ -13,6 +20,8 @@ const quizA = Array.from(document.getElementsByClassName("quiz-answer"));
 const tallyQ = document.getElementById("questionTally");
 const tallyS = document.getElementById("scoreTally");
 const currentProg = document.getElementById("progression");
+const loadingSpinner = document.getElementById("loading-spinner");
+const quiz = document.getElementById("quiz");
 
 /*--I have created another handful of variables which will each have a role to play--*/
 
@@ -22,25 +31,28 @@ const currentProg = document.getElementById("progression");
 /*--qNum is a variable that will determine which question number the user is on--*/
 /*--availableQ is an empty array which will be an available copy of our question set, we will take questions out 
 of our availableQ array as the user uses them. The user will be presented with a unique question each time--*/
+/*--time is a variable has has been set 10. This will be how long a user has to answer each question within the game--*/
+/*--quizQuests is a variable which contains a handful of questions in the form of objects. 
+Each object consists of one question and four possible answers. The object also contains the actual answer--*/
 
 let currentQ = {};
 let answerDelay = false;
 let score = 0;
 let qNum = 0;
+let time = 10;
 let availableQ = [];
+let quizQuests = [];
 
 /*--The correctPoints variable is how many points will be awarded for a correct answer--*/
-/*--The incorrectPoints variable is how many points will be deducted for a wrong answer--*/
+/*--The incorrectPoints variable is how many points will be deducted for an incorrect answer--*/
 /*--The totalQuests variable set the limit for how many questions a user will be given--*/
 
 const correctPoints = 10;
 const incorrectPoints = 3;
 const totalQuests = 10;
 
-/*--quizQuests is a variable which contains a handful of questions in the form of objects. 
-Each object consists of one question and four possible answers. The object also contains the actual answer--*/
 
-let quizQuests = [];
+/*FETCH API*/
 
 /*--Here I've used fetch and pasted in a URL from a free quiz database API (https://opentdb.com/). What I needed to do next was 
 transform each question and answer fetched into the format we're using for the Quizzical website. Please see the questions.json file within
@@ -89,7 +101,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
             });
             return convertedQuest;
         });
-
+    
         gameBegin();
     })
 
@@ -97,7 +109,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
 /*GAME BEGIN FUNCTION*/
 
 /*--This is the gameBegin function which is the function that’ll be used at the beginning of the game. 
-We’ll start on qNum (question number) 0 and we’ll start with a score of 0. 
+We’ll start on qNum (question number) 0 and we’ll start with a score of 0, and also the timer will start at 10.
 availableQ is our empty array which will copy our questions from our quizQuests array using the spread operator. 
 The spread operator [...quizQuests] takes an array, spreads out each of its items and puts them into a new array (availableQ). 
 Ultimately when availableQ runs out of items, the game will finish. Either that or when totalQuests reaches it’s limit, the game will end.--*/
@@ -105,12 +117,19 @@ Ultimately when availableQ runs out of items, the game will finish. Either that 
 /*--the nextQuest function will be called within the gameBegin function to initiate the next question within the game. 
 Basically when we have started the game and chosen our first answer, we’ll move onto the next question--*/
 
+/*--Quiz questions will not be displayed when loading spinner is active. Loading spinner will not be displayed when questions are
+being displayed. This has been done because when questions are being loaded from the API, there is a slight time delay and empty
+fields are displayed, sometimes for 1 second, sometimes for up to 5 seconds. This looked very sloppy so to counter this the 
+loading spinner has been put in place.--*/
+
 gameBegin = function () {
     score = 0;
     qNum = 0;
     availableQ = [...quizQuests];
     time = 10;
     nextQuest();
+    quiz.classList.remove("d-none");
+    loadingSpinner.classList.add("d-none");
 };
 
 /*NEXT QUESTION FUNCTION*/
@@ -153,10 +172,15 @@ the quizQ’s (quiz question’s) HTML element, the innerHTML, and make it the c
 a data-number within each question. Here we are referencing that data-number. This function is basically saying find the “answer” within the quizA variable and 
 find it’s dataset-number and display the answers relating to the speficic currentQ (current question)--*/
 
-/*--Finally we’re taking the availableQ array and we’re splicing out the question that we just used so that we don’t randomly generate the same question twice. 
+/*--We’re taking the availableQ array and we’re splicing out the question that we just used so that we don’t randomly generate the same question twice. 
 answerDelay is set to true so that when the question has loaded we’re giving permission to the user to go ahead and answer--*/
 
+/*--Finally the counDown timer is called and the time is reset to 10. This is placed at the bottom so that that function is used first.
+Obviously we don't want the countdown timer to start at just any point do we? We want it to start when a question is called--*/
+
 nextQuest = function () {
+
+    // debugger;
 
     if (availableQ.length === 0 || qNum >= totalQuests) {
         localStorage.setItem("newScore", score);
@@ -183,6 +207,8 @@ nextQuest = function () {
     countDown();
 };
 
+/*COUNTDOWN TIMER FUNCTION*/
+
 /*--I've created the function below for question.html's timer. The first line will deduct 1 from the set time (10).
 The first if statement says if the time is 10 or under, display it on the html page.
 The second if statement says when the time goes under 1, clear the interval it's currently set at
@@ -207,6 +233,7 @@ countDown = function () {
 
 update = setInterval("countDown()", 1000);
 
+/*COLOUR CHANGE FUNCTION*/
 
 /*--This little function will stop a user from being able to click an answer if the website isn’t ready for it. 
 This function can go either two ways, chosenAnswer is an e-target for incorrect answers and chosenCorrect is a correct answer. 
@@ -248,6 +275,8 @@ quizA.forEach(function (answer) {
         }, 1200);
     });
 });
+
+/*INCREASE/DECREASE SCORE FUNCTION*/
 
 /*--The two functions below are set to either increase or decrease the score and then display it on the questions.html page
 via the tallyS variable. These functions are called above in our if() statements. If the answer is correct, award points.
