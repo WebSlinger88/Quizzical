@@ -101,7 +101,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
             });
             return convertedQuest;
         });
-    
+
         gameBegin();
     })
 
@@ -180,8 +180,6 @@ Obviously we don't want the countdown timer to start at just any point do we? We
 
 nextQuest = function () {
 
-    // debugger;
-
     if (availableQ.length === 0 || qNum >= totalQuests) {
         localStorage.setItem("newScore", score);
         return window.location.assign("./completed.html");
@@ -203,7 +201,6 @@ nextQuest = function () {
     availableQ.splice(qCatalogue, 1);
     answerDelay = true;
 
-    time = 10;
     countDown();
 };
 
@@ -217,21 +214,17 @@ for the countDown function is 1000ms. This is deducting 1 from time every 1 seco
 
 countDown = function () {
 
-    time = time - 1;
-
-    if (time < 10) {
         timer.innerHTML = time;
-    }
 
     if (time < 1) {
-        decreaseScore(incorrectPoints);
-        setInterval("countDown()", 1000);
+        time = 10;
         nextQuest();
-        window.clearInterval(update);
+        decreaseScore(incorrectPoints);
     }
+    else (time = time - 1)
 }
 
-update = setInterval("countDown()", 1000);
+setInterval("countDown()", 1000);
 
 /*COLOUR CHANGE FUNCTION*/
 
@@ -271,6 +264,7 @@ quizA.forEach(function (answer) {
 
         setTimeout(function () {
             chosenAnswer.parentElement.classList.remove(colorChange);
+            time = 10;
             nextQuest();
         }, 1200);
     });
