@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Amarante&display=swap:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap:100,200,300,400,500,600,700');
 
 /* -- All Pages -- */
 
@@ -6,7 +7,7 @@
 body,html {
     background-color: #800080;
     text-align: center;
-    font-family: 'Amarante', sans-serif;
+    font-family: 'Amarante', 'Roboto', sans-serif;
     color: #CA9E65;
     min-height: 100vh;
     display: flex;
@@ -165,6 +166,20 @@ button[disabled]:hover {
 
 /* -- Loader -- */
 
+#loading-spinner {
+  border: 1rem solid #CA9E65;
+  border-top: 1rem solid #800080;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  animation: spin 2s linear infinite;
+  margin-top: 10rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 /* -- Footer -- */
 
