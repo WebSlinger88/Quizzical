@@ -248,3 +248,51 @@ sorted, and displayed within an attractive table keeping the same theme as the r
 to complete the quiz and upload their score to local storage, the leaderboard table will begin to populate information. The information that is held and displayed will be 
 the users name and score only. Finally, as mentioned in the navigation section of this ducument, there is a "Return to Home" button located at the bottom of the Leaderboard page.
 
+---
+
+ ## **FEATURES LEFT TO IMPLEMENT** <a name="features-left"></a>
+
+ * Currently there is no way for users to save their score on a device and then access their score on another device. Currently scores are saved on local storage therefore
+ they cannot be accessed anywhere other than the device they originated from. This means that each device Quizzical is played on will have a completely different leaderboard.
+ In the future we will implement cloud storage so that players from different households/friendship groups will be able to complete against each other, rather than the current
+ situation where people are limited to one device.
+ ---
+
+  ## **TECHNOLOGIES USED** <a name="technologies"></a>
+
+1. HTML5
+
+    * The building blocks to everything that is code! Used to create the foundations of Quizzical's website.
+
+2. CSS3
+
+    * Who's got style? Used to style Quizzical's HTML code.
+
+3. JavaScript
+
+    * The brains behind it all! JavaScript is used to make everything flow smoothly. Timer? Check. Random Questions? Check.
+    Score Counter? Check. You name it, JavaScript has got it!
+
+4. [Bootstrap](https://getbootstrap.com/)
+
+    * Used for Bootstrap's grid system, Navigation, mobile responsiveness etc...
+
+5. [Font Awesome](https://fontawesome.com/start)
+
+    * Used to provide quality icons for Quizzical's footer.
+    
+6. [Google Fonts](https://fonts.google.com/)
+
+    * Used to change the font throughout Quizzical's whole website.
+
+7. [Balsamiq Wireframes 4](https://balsamiq.com/)
+
+    * Used to create Quizzical's Wireframes.
+
+8. [Adobe XD](https://www.adobe.com/uk/products/xd.html)
+
+    * Used to create Quizzical's logos and Mock Ups.
+
+9. [Tiny PNG](https://tinypng.com/)
+
+    * Used to reduce the size of PNG and JPG files.
