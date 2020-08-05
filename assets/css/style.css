@@ -186,3 +186,7 @@ button[disabled]:hover {
 .footer {
     font-size: 1.5vh;
 }
+
+.footer p a:hover {
+    text-shadow:0 0 0.09375rem #CA9E65;
+}
