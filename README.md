@@ -60,7 +60,7 @@ Quizzical is aimed at both adults and children alike.
 
 Please feel free to delve into a demo of Quizzical's website.
 
-You can live demo Quizzical's website here: [Quizzical](https://ENTER WEBSITE HERE).
+You can live demo Quizzical's website here: [Quizzical](https://webslinger88.github.io/Quizzical/).
 
 ![Responsive showcase image of Just Gym website](assets/images/readme/quizzical-multi-platform-image.png "Responsive showcase image of Quizzical website")
 
