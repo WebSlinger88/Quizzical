@@ -8,81 +8,88 @@ and it is also used by screen readers that switch language profiles to provide t
 
 <head>
 
-<!--Metadata will not be displayed on the page, but is machine parsable.
+	<!--Metadata will not be displayed on the page, but is machine parsable.
 Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.-->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Lewis Wheeler">
-    <meta name="description" content="Milestone-Project-2">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Lewis Wheeler">
+	<meta name="description" content="Milestone-Project-2">
 
-<!--The link tags below allow us to connect with outisde services in order to imporove the functionality of our website.
+	<!--The link tags below allow us to connect with outisde services in order to imporove the functionality of our website.
 Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 Font Awesome is a font and icon toolkit based on CSS. Font Awesome is designed to be used with inline elements.-->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    
-<!--The link tag below allows html files to communicate with css files, in this case, style.css.
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media.-->
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+		integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+		crossorigin="anonymous" />
 
-<!--A title tag is an HTML element that specifies the title of a web page. 
+	<!--The link tag below allows html files to communicate with css files, in this case, style.css.
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.-->
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--A title tag is an HTML element that specifies the title of a web page. 
 Title tags are displayed on search engine results pages (SERPs) as the clickable headline for a given result, and are important for usability, SEO, and social sharing.-->
 
-    <title>Quizzical - Leaderboard</title>
+	<title>Quizzical - Leaderboard</title>
 
 </head>
 
 <body>
 
-<header>
+	<header>
 
-    <div class="container-fluid">
-        <img class="page-logo d-block mx-auto img-fluid pl-1" src="./assets/images/website/page-logo.png" alt="quizzical-page-logo"/> 
+		<div class="container-fluid">
+			<img class="page-logo d-block mx-auto img-fluid pl-1" src="./assets/images/website/page-logo.png" alt="quizzical-page-logo"/>
     </div>
 
-</header>
+	</header>
 
-<main>
+	<main>
 
-<div class="container"> 
+		<div class="container">
 
-        <div class="row justify-content-center">
+			<div class="row justify-content-center">
 
-            <div id="leaderBoard" class="col-sm-12 col-md-8 col-lg-8">
+				<div id="leaderBoard" class="col-sm-12 col-md-8 col-lg-8">
 
-            <h1 class="lb-title mt-lg-5 mt-3 mb-4">leaderboard</h1>
+					<h1 class="lb-title mt-lg-5 mt-3 mb-4">leaderboard</h1>
 
-            <ul id="lb-list"></ul>
-            
-</div>
+					<ul id="lb-list"></ul>
 
-<div class="col-sm-12 col-md-8 col-lg-6"> 
-<a class="btn d-block mx-auto w-75 mt-5 mb-5" href="index.html">Return to Home</a>
-</div>
-    </div>
-        </div>
+				</div>
 
-</main>
+				<div class="col-sm-12 col-md-8 col-lg-6">
+					<a class="btn d-block mx-auto w-75 mt-5 mb-5" href="index.html">Return to Home</a>
+				</div>
+                
+			</div>
+		</div>
 
-<footer>
+	</main>
 
-     <div class="container">
-        <div class="footer">
-            <p>
-            Copyright - All Rights Reserved - <a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" style="text-decoration: none; color: #CA9E65;" target="_blank">Lewis Wheeler <i class="fab fa-linkedin"></i></a> © 2020</p>
-        </div>
-    </div>
+	<footer>
 
-</footer>
+		<div class="container">
+			<div class="footer">
+				<p>
+					Copyright - All Rights Reserved - <a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/"
+						style="text-decoration: none; color: #CA9E65;" target="_blank">Lewis Wheeler
+						<i class="fab fa-linkedin"></i></a> © 2020</p>
+			</div>
+		</div>
 
-<!--The script tag below allows html files to communicate with Javascript files.
+	</footer>
+
+	<!--The script tag below allows html files to communicate with Javascript files.
 We place it at the bottom of the body element because it gives the HTML time to load before any of the JavaScript loads, which can prevent errors, 
 and speed up website response time. -->
 
-    <script src="assets/js/leaderboard.js"></script>
+	<script src="assets/js/leaderboard.js"></script>
 
 </body>
+
 </html>
