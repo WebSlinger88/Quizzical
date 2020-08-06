@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<!--The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. 
-This ensures that the web page is parsed the same way by different web browsers.-->
 
 <html lang="en">
-<!--The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, 
-and it is also used by screen readers that switch language profiles to provide the correct accent and pronunciation.-->
 
 <head>
 
 	<!--Metadata will not be displayed on the page, but is machine parsable.
 Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.-->
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Lewis Wheeler">
 	<meta name="description" content="Milestone-Project-2">
 
-	<!--The link tags below allow us to connect with outisde services in order to imporove the functionality of our website.
+	<!--These link tags allow us to connect with outside services in order to imporove the functionality of our website.
 Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 Font Awesome is a font and icon toolkit based on CSS. Font Awesome is designed to be used with inline elements.-->
-
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
 		integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
 		crossorigin="anonymous" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
-        
-	<!--The link tag below allows html files to communicate with css files, in this case, style.css.
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media.-->
+	<!--The link tag below allows me to display Quizzican's favicon icon. This is the little icon you see in a browser's tab.-->
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon/favicon.png">
 
+	<!--The link tag below allows html files to communicate with css files, in this case, style.css-->
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!--A title tag is an HTML element that specifies the title of a web page. 
 Title tags are displayed on search engine results pages (SERPs) as the clickable headline for a given result, and are important for usability, SEO, and social sharing.-->
-
 	<title>Quizzical - Questions</title>
 
 </head>
@@ -47,6 +36,7 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 
 	<header>
 
+		<!--Quizzical's page logo with Bootstrap styling-->
 		<div class="container-fluid">
 			<img class="page-logo d-block mx-auto img-fluid pl-1" src="./assets/images/website/page-logo.png" alt="quizzical-page-logo"/>
     </div>
@@ -54,16 +44,21 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 	</header>
 
 	<main>
+
 		<div class="container h-100">
 
+			<!--Div tag for spinning loader image with Bootstrap positioning-->
 			<div id="loading-spinner" class="mx-auto"></div>
 
+			<!--Bootstrap Row and Column for mobile responsiveness-->
 			<div id="quiz" class="row h-100 justify-content-center align-items-center d-none">
 
 				<div class="col-sm-12 col-md-8 col-lg-8">
 
+					<!--This heading class will display questions-->
 					<h2 class="mt-5" id="quiz-question"></h2>
 
+					<!--The following 4 divs will display the answers-->
 					<div class="question-container d-block mx-auto w-75 mb-3">
 						<p class="quiz-answer p-2" data-number="1"></p>
 					</div>
@@ -82,11 +77,13 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 
 					<div id="quiz-details">
 
+						<!--Quizzical's progression bar div styled with css and controled by javascript-->
 						<div id="progression-bar">
 							<div id="progression"></div>
 						</div>
 					</div>
 
+					<!--One row, three columns for question tally, timer and score tally-->
 					<div class="row">
 						<div class="col-4">
 							<div class="detail-feature">
@@ -119,6 +116,7 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 
 				</div>
 
+				<!--Clickable button navigating to index.html home page-->
 				<div class="col-sm-12 col-md-8 col-lg-6">
 					<a class="btn d-block mx-auto w-75 mt-3 mb-5" href="index.html">Return to Home</a>
 				</div>
@@ -129,6 +127,7 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 
 	<footer>
 
+		<!--Footer containing copyright information and link to developer's social profile-->
 		<div class="container">
 			<div class="footer">
 				<p>
@@ -140,10 +139,7 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 
 	</footer>
 
-	<!--The script tag below allows html files to communicate with Javascript files.
-We place it at the bottom of the body element because it gives the HTML time to load before any of the JavaScript loads, which can prevent errors, 
-and speed up website response time. -->
-
+	<!--This script tag allows html files to communicate with Javascript files-->
 	<script src="assets/js/questions.js"></script>
 
 </body>
