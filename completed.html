@@ -55,14 +55,14 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 					<!--Text input field for users to enter their name and clickable button to submit score.
                     Button disabled until text is entered into field-->
 					<form>
-						<input class="input w-75 mt-3 mb-2" type="text" name="username" id="name" placeholder="Enter Name"/>
+						<input class="input w-75 mt-3 mb-2 text-center" type="text" name="username" id="name" placeholder="Enter Name"/>
 						<button type="submit" class="btn w-75 mt-2" id="saveScore" onclick="saveToBoard(event)" disabled>Save Score</button>
 					</form>
 
 					<!--Three buttons with Bootstrap styling enabling navigation to Quizzical's other pages-->
-					<a class="btn d-block mx-auto w-75 mt-4" href="questions.html">Play Again</a>
-					<a class="btn d-block mx-auto w-75 mt-2" href="leaderboard.html">View Leaderboard</a>
-					<a class="btn d-block mx-auto w-75 mt-2 mb-5" href="index.html">Return to Home</a>
+					<a class="btn d-block mx-auto w-75 mt-4" href="questions.html" aria-label="Replay">Play Again</a>
+					<a class="btn d-block mx-auto w-75 mt-2" href="leaderboard.html" aria-label="Leaderboard">View Leaderboard</a>
+					<a class="btn d-block mx-auto w-75 mt-2 mb-5" href="index.html" aria-label="Home">Return to Home</a>
 				</div>
 			</div>
 		</div>
@@ -75,9 +75,8 @@ Title tags are displayed on search engine results pages (SERPs) as the clickable
 		<div class="container">
 			<div class="footer">
 				<p>
-					Copyright - All Rights Reserved - <a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/"
-						style="text-decoration: none; color: #CA9E65;" target="_blank">Lewis Wheeler
-						<i class="fab fa-linkedin"></i></a> © 2020</p>
+                    Copyright - All Rights Reserved - <a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/"
+						target="_blank" aria-label="Find me on LinkedIn" rel="noopener">Lewis Wheeler <i class="fab fa-linkedin"></i></a> © 2020</p>
 			</div>
 		</div>
 
