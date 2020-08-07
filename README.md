@@ -62,7 +62,7 @@ Please feel free to delve into a demo of Quizzical's website.
 
 You can live demo Quizzical's website here: [Quizzical](https://webslinger88.github.io/Quizzical/).
 
-![Responsive showcase image of Just Gym website](assets/images/readme/quizzical-multi-platform-image.png "Responsive showcase image of Quizzical website")
+![Responsive showcase image of Quizzical website](assets/images/readme/quizzical-multi-platform-image.png "Responsive showcase image of Quizzical website")
 
 ---
 ## **UX** <a name="ux"></a>
