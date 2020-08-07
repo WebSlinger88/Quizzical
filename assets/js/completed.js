@@ -68,5 +68,5 @@ saveToBoard = function(e) {
 
     localStorage.setItem("results", JSON.stringify(results));
 
-    window.location.assign("/leaderboard.html");
+    window.location.assign("leaderboard.html");
 };
