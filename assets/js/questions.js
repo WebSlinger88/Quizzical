@@ -109,7 +109,7 @@ nextQuest = function () {
 
     if (availableQ.length === 0 || qNum >= totalQuests) {
         localStorage.setItem("newScore", score);
-        return window.location.assign("./completed.html");
+        return window.location.assign("completed.html");
     }
 
     qNum++;
