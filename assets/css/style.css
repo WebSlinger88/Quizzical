@@ -61,7 +61,7 @@ main {
 }
 
 .question-container {
-    font-size: 2.75vh;
+    font-size: 2.25vh;
     color: #800080;
     background-color: #CA9E65;
     border-radius: 2rem;
@@ -74,6 +74,7 @@ main {
 
 #quiz-question {
     margin-bottom: 2rem;
+    font-size: 2.75vh;
 }
 
 .answer-text {
@@ -91,7 +92,7 @@ main {
 }
 
 .detail-feature h1 {
-    font-size: 3.25vh;
+    font-size: 2.75vh;
 }
 
 #progression-bar {
