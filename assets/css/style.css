@@ -37,8 +37,15 @@ main {
     }
 }
 
+@media (max-width: 450px) {
+    .home-logo {
+    height: 15rem;
+    width: 15rem;
+    }
+}
+
 .home-text {
-    font-size: 1.7vh;
+    font-size: 2vh;
 }
 
 .btn {
