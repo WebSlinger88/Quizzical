@@ -44,6 +44,12 @@ main {
     }
 }
 
+@media (min-width: 450px) {
+    .home-logo {
+    margin-top: 2rem;
+    }
+}
+
 .home-text {
     font-size: 2vh;
 }
