@@ -29,6 +29,7 @@ like they've learnt something. Quizzical is aimed at both adults and children al
     * [Questions](#questions)
     * [Completed](#completed)
     * [Leaderboard](#leaderboard)
+    * [Other Features](#other-feat)
 
 4. [Features left to Implement](#features-left)
 
@@ -270,6 +271,11 @@ leaderboard is to offer the user the chance to compete against family and friend
 sorted, and displayed within an attractive table keeping to the same theme as the rest of Quizzical's website. Initially, there will be no table to display, but as users start 
 to complete the quiz and upload their score to local storage, the leaderboard table will begin to populate information. The information that is held and displayed will be 
 the users name and score only. Finally, as mentioned in the navigation section of this document, there is a "Return to Home" button located at the bottom of the Leaderboard page.
+
+### **OTHER FEATURES** <a name="other-feat"></a>
+
+ * Quizzical's website has a favicon image which displays in a user's web browser tab. The image is a small purple square with a gold coloured "Q" within it.
+ This favicon image keeps to the Quizzical's colour theme, and also the font used throughout the whole website. This has been added for improved UX.
 
 ---
 
