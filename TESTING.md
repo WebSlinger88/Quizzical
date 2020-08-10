@@ -155,4 +155,4 @@ All of Quizzical's textual content including this Readme file has been run throu
 
 ---
 
-[Return to top](#top)?
+[Return to top?](#top)
