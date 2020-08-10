@@ -26,6 +26,8 @@ main {
     animation-name: logo-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    max-width: 20rem;
+    max-height: 20rem;
 }
 
 @keyframes logo-zoom {
