@@ -122,13 +122,13 @@ Below you shall find some images of the original sketches used to help develop t
 
 #### *Sketches* <a name="sketches"></a>
 
-* [Home Page Sketch](assets/images/readme/sketches/ms2-sketch-home.jpg)
+* [Home Page Sketch](assets/images/sketches/ms2-sketch-home.jpg)
 
-* [Questions Page Sketch](assets/images/readme/sketches/ms2-sketch-questions.jpg)
+* [Questions Page Sketch](assets/images/sketches/ms2-sketch-questions.jpg)
 
-* [Completed Page Sketch](assets/images/readme/sketches/ms2-sketch-completed.jpg)
+* [Completed Page Sketch](assets/images/sketches/ms2-sketch-completed.jpg)
 
-* [Leaderboard Page Sketch](assets/images/readme/sketches/ms2-sketch-leaderboard.jpg)
+* [Leaderboard Page Sketch](assets/images/sketches/ms2-sketch-leaderboard.jpg)
 
 After drawing up the sketches it was time to get them onto the screen. To do this a wireframe was created using Balsamiq Wireframes 4.
 Wireframes are used to display what the creator ultimately envisions the website to look like, roughly! It acts as one of the first stepping stones
@@ -136,21 +136,21 @@ of the journey. Please find below the original Wireframes for Quizzical's projec
 
 #### *Wireframes* <a name="wireframes"></a>
 
-* [Home Page Wireframe](assets/images/readme/wireframes/ms2-wireframe-home.png)
+* [Home Page Wireframe](assets/images/wireframes/ms2-wireframe-home.png)
 
-* [Questions Page Wireframe](assets/images/readme/wireframes/ms2-wireframe-questions.png)
+* [Questions Page Wireframe](assets/images/wireframes/ms2-wireframe-questions.png)
 
-* [Completed Page Wireframe](assets/images/readme/wireframes/ms2-wireframe-completed.png)
+* [Completed Page Wireframe](assets/images/wireframes/ms2-wireframe-completed.png)
 
-* [Leaderboard Page Wireframe](assets/images/readme/wireframes/ms2-wireframe-leaderboard.png)
+* [Leaderboard Page Wireframe](assets/images/wireframes/ms2-wireframe-leaderboard.png)
 
-* [Mobile Home Page Wireframe](assets/images/readme/wireframes/ms2-mobile-wireframe-home.png)
+* [Mobile Home Page Wireframe](assets/images/wireframes/ms2-mobile-wireframe-home.png)
 
-* [Mobile Questions Page Wireframe](assets/images/readme/wireframes/ms2-mobile-wireframe-questions.png)
+* [Mobile Questions Page Wireframe](assets/images/wireframes/ms2-mobile-wireframe-questions.png)
 
-* [Mobile Completed Page Wireframe](assets/images/readme/wireframes/ms2-mobile-wireframe-completed.png)
+* [Mobile Completed Page Wireframe](assets/images/wireframes/ms2-mobile-wireframe-completed.png)
 
-* [Mobile Leaderboard Page Wireframe](assets/images/readme/wireframes/ms2-mobile-wireframe-leaderboard.png)
+* [Mobile Leaderboard Page Wireframe](assets/images/wireframes/ms2-mobile-wireframe-leaderboard.png)
 
 #### *Mock Ups* <a name="mockups"></a>
 
@@ -159,21 +159,21 @@ seriously. Enter Adobe XD. Adobe XD is a powerful piece of software designed to 
 and sketches etc.. are now a thing of the past! If you scan down slightly you will find links to Quizzical's Mock-Ups. You can clearly see how the 
 project has evolved.
 
-* [Home Page Mockup](assets/images/readme/mockups/ms2-mockup-home.png)
+* [Home Page Mockup](assets/images/mockups/ms2-mockup-home.png)
 
-* [Questions Page Mockup](assets/images/readme/mockups/ms2-mockup-questions.png)
+* [Questions Page Mockup](assets/images/mockups/ms2-mockup-questions.png)
 
-* [Completed Page Mockup](assets/images/readme/mockups/ms2-mockup-completed.png)
+* [Completed Page Mockup](assets/images/mockups/ms2-mockup-completed.png)
 
-* [Leaderboard Page Mockup](assets/images/readme/mockups/ms2-mockup-leaderboard.png)
+* [Leaderboard Page Mockup](assets/images/mockups/ms2-mockup-leaderboard.png)
 
-* [Mobile Home Page Mockup](assets/images/readme/mockups/ms2-mobile-mockup-home.png)
+* [Mobile Home Page Mockup](assets/images/mockups/ms2-mobile-mockup-home.png)
 
-* [Mobile Questions Page Mockup](assets/images/readme/mockups/ms2-mobile-mockup-questions.png)
+* [Mobile Questions Page Mockup](assets/images/mockups/ms2-mobile-mockup-questions.png)
 
-* [Mobile Completed Page Mockup](assets/images/readme/mockups/ms2-mobile-mockup-completed.png)
+* [Mobile Completed Page Mockup](assets/images/mockups/ms2-mobile-mockup-completed.png)
 
-* [Mobile Leaderboard Page Mockup](assets/images/readme/mockups/ms2-mobile-mockup-leaderboard.png)
+* [Mobile Leaderboard Page Mockup](assets/images/mockups/ms2-mobile-mockup-leaderboard.png)
 
 ---
 
