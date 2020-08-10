@@ -233,7 +233,7 @@ to the user. This text welcomes the user, gives a brief description about that t
 not too much verticle screen space is taken up. Similarly, this logo image was developed using Adobe XD. The first thing you should notice is the questions displayed
 on the Questions page. The questions themselves are displayed in a large font in gold text against a purple background, keeping to the theme of the Quizzical website.
 Below the question, the user will be presented with four possible answers each resembling a clickable button, much like those discovered on the Home page. When a user 
-hovers their mouse over an answer button, the button will have a shine effect, this shine effect is called box-shadow. Box-shadow is highly appealing to the eye and
+hovers their mouse over an answer button, the button will have a highlight effect, this highlight effect is called box-shadow. Box-shadow is highly appealing to the eye and
 gives the user a better user experience. Below the answer buttons, there is a progress bar. The progress bar is a visual interpretation of how far through the user is
 in their game. As a user progresses through the game, the progress bar will fill. There are ten questions within the Quizzical game therefore the progress bar will fill
 ten per cent every time a question is answered. The progress bar has a gold border and a purple background, it fills with gold as the game progresses, keeping to the theme
@@ -243,7 +243,11 @@ The timer is set to ten seconds which means that each user has a maximum of ten 
 be deducted and the next question will be populated. The third and final piece of information is the score tally. Users will be awarded ten points (10) for each correct answer
 but three points (3) shall be deducted for any incorrect answer the user may accumulate. This will be automatically updated with JavaScript code as the game is played.
 The point system is a key feature of the Quizzical website. It enables key replay value and competitiveness. When a question is answered, the button clicked will briefly
-change colour to either green or red, depending on whether the question was answered correctly or incorrectly. The text also changes to white momentarily.
+change colour to either green or red, depending on whether the question was answered correctly or incorrectly. The text also changes to white momentarily. Finally I shall mention 
+that because questions are being loaded from an API, there can be a slight delay. Instead of users staring at a blank screen for any period, a loading spinner has been put in 
+place. This loading spinner is a spinning circle which replaces all of the content of questions.html. It is gold in colour to match the theme of the website. To summarise,
+when a user is waiting for questions to load, the loading spinner appears. When questions are ready to be displayed, the loading spinner disappears and all of question.html's
+content re-appears.
 
 ### **COMPLETED PAGE** <a name="completed"></a>
 
@@ -326,7 +330,7 @@ Due to the extensive nature of the testing process, test analysis and reporting 
 Here you shall find a separate markdown file as well as a more visual PDF file containing an Excel spreadsheet.
 
 * [Testing.md](https://github.com/WebSlinger88/Quizzical/blob/master/TESTING.md)
-* [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/blob/master/testing/quizzical-testing.zip)
+* [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/assets/testing)
 
 ---
 
