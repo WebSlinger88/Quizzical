@@ -350,7 +350,7 @@ Please note that it can take up to 20 minutes for this process to complete.
 ### **CLONING REPOSITORY** <a name="cloning"></a>
 
 1. Navigate to the Github remote repository: [WebSlinger88: Quizzical](https://github.com/WebSlinger88/Quizzical).
-2. Click 'Clone or Download'.
+2. Click green button labelled "Code" with download icon visible (next to Gitpod button).
 3. Copy the clone HTTPS or SSH by clicking on the copy button.
 4. Open [Git Bash](https://gitforwindows.org/).
 5. Change the current working directory to the location where you want the cloned directory to be made.
