@@ -181,7 +181,7 @@ project has evolved.
 
 The colour scheme chosen for this website offers fluorescent, striking colours.
 There are two main colours (Purple & Gold) for this website, they're sure to impress!
-This was chosen because of the colours' positive vibe and feel-good effect.
+This was chosen because of the colours' positive vibe and feel-good effect. Here are the chosen colours:
 
 ![Website Colour Scheme](assets/images/readme/website-colours.png "Website Colour Scheme")
 
@@ -412,4 +412,4 @@ Inspiration was used in various locations across the world wide web. Please see 
 *A special thank you to [Maranatha Ilesanmi](https://github.com/mbilesanmi) Code Institute Mentor and [Paul F_alumni](https://github.com/Spagettileg) for aid, assistance, and much-needed guidance.*
 ---
 ---
-[Return to top](#top)
+[Return to top](#top)?
