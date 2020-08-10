@@ -32,7 +32,6 @@ You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](http
 
 ## **TESTING** <a name="testing"></a>
 
-
 ### **HOME PAGE** <a name="home-test"></a>
 
 * The user is presented with a landing page (Home page). The main logo image and text are central. The Main logo has keyframes zoom animation which lasts for four seconds. 
@@ -121,7 +120,9 @@ The Quizzical website has been tested using an 18" Dell XPS laptop with Windows 
 
 All tests were positive and no issues found apart from Internet Explorer 10 & 11 would not load the questions.html page. This is not a problem because
 Internet Explorer is now obsolete. It may also be worth mentioning that the keyframes animation on the index.html page is extremely laggy when using
-Internet Explorer, however as previously stated, this is mostly an obsolete browser. 
+Internet Explorer, however as previously stated, this is mostly an obsolete browser.
+
+It is worth mentioning that the Quizzical favicon image displays within the browser's tab for all HTML pages.
 
 ---
 
