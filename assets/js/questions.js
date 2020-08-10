@@ -140,7 +140,7 @@ nextQuest = function () {
 
 countDown = function () {
 
-        timer.innerHTML = time;
+    timer.innerHTML = time;
 
     if (time < 1) {
         time = 10;

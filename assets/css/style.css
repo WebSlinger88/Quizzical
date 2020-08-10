@@ -3,7 +3,7 @@
 
 /* -- All Pages -- */
 
-/*I've added min-height, display flex, flex direction and flex 1 to push my footer to the bottom of the screen */
+/*-I've added min-height, display flex, flex direction and flex 1 to push my footer to the bottom of the screen-*/
 body,html {
     background-color: #800080;
     text-align: center;
@@ -181,8 +181,7 @@ button[disabled]:hover {
 
 /* -- Loader -- */
 
-/*- This indicates to user that questions are loading.
-I took inspiration for this from https://www.w3schools.com/howto/howto_css_loader.asp-*/
+/*-This indicates to user that questions are loading. I took inspiration for this from https://www.w3schools.com/howto/howto_css_loader.asp-*/
 #loading-spinner {
   border: 1rem solid #CA9E65;
   border-top: 1rem solid #800080;
