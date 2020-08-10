@@ -35,11 +35,11 @@ You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](http
 
 ### **HOME PAGE** <a name="home-test"></a>
 
-* The user is presented with a landing page (Home page). The main logo image and text are central. The Main logo has a keyframes zoom animation which last for four seconds. 
-During this time the logo increases in size from 80% to 100%. This works well and offers great UX. This takes effect every time the Home page is loaded. Below the text, there are 
-two buttons. Each button is a link to another page. The first button (Start Game) links us to the questions.html page. This page is the beginning of the quiz game that 
-Quizzical's website has to offer. The second button (View Leaderboard) links us to the leaderboard.html page. This page is the page which we'll generally find towards the 
-end of the game. Both buttons work as expected and direct us flawlessly. Both buttons have a hover effect which provide great UX. When a user's mouse hovers over the buttons, 
+* The user is presented with a landing page (Home page). The main logo image and text are central. The Main logo has keyframes zoom animation which lasts for four seconds. 
+During this time the logo increases in size from 80% to 100%. This works well and offers great UX. This is initiated every time the Home page is loaded. Below the text there are 
+two buttons. Each button is a link to another page. The first button, "Start Game", links us to the questions.html page. This page is the beginning of the quiz game that 
+Quizzical's website has to offer. The second button, "View Leaderboard", links us to the leaderboard.html page. This page is the page which we'll generally find towards the 
+end of the game. Both buttons work as expected and direct us flawlessly. Both buttons have a hover effect (box-shadow) which provides great UX. When a user's mouse hovers over the buttons, 
 each button highlights gold which keeps to the theme of the website and mimics the colour of the button itself. Also, it's worth mentioning that the mouse cursor transforms into a 
 pointer when hovered. This is true for both buttons. The Home page has been tested across multiple devices and browsers: Chrome, Firefox, Safari, Samsung, iPhone, Amazon... to name a few. 
 Each device and browser displayed the Home page perfectly and it was found that the page was responsive without any issues. Footer displays as expected and link works as expected.
@@ -52,16 +52,16 @@ which makes great UX and superb replayability. Each answer is a button. Each but
 over the buttons, each button highlights gold which keeps to the theme of the website. Also, it's worth mentioning that the mouse cursor transforms into a pointer when hovered. 
 This is true for all buttons. When a question is answered correctly, the button will briefly change colour to green and it's text colour changes to white. If a question is answered
 incorrectly, the button will briefly change colour to red and it's text colour changes to white. This stays true for all question's answers. This is a great indication to the user
-as to whether they answered correctly or not. Below the questions/answers, the user is presented with a long horizontal progression bar. This bar appears empty but every time the 
+as to whether they answered correctly or not. Below the questions/answers, the user is presented with a long horizontal progression bar. This bar appears empty, but every time the 
 user answers a question, the bar fills by ten percent (10%). The bar fills by ten percent (10%) because there are ten (10) questions in total. The game has been played multiple 
 times and the bar has filled as expected every time without fail. The only thing noticed which may not be intentional is that when completing question ten out of ten (10/10), the bar does 
 not fill all the way to the top and the completed.html page is loaded. One would expect the bar to fill completely once the final question has been answered. This does not impact 
-the game in any way and does not harm the user's experience whatsoever. Positioned below the progression bar, situated to the left is a question counter. The question counter is 
-displayed one out of ten (1/10) at the start of the game. Every time a question is answered the first number in the fraction is increased by one (1). As the game progresses the counter 
-eventually reaches ten out of ten (10/10) once all questions have been answered. The math within the JavaScript works perfectly and there are no issues. To the right-hand side of 
+the game in any way and does not harm the user's experience whatsoever. Positioned below the progression bar, situated to the left, is a question counter. The question counter is 
+displayed one out of ten (1/10) at the start of the game. Every time a question is answered the first number in the fraction is increased by one (1). As the game progresses, the counter 
+eventually reaches ten out of ten (10/10), once all questions have been answered. The math within the JavaScript works perfectly and there are no issues. To the right-hand side of 
 the question counter is a timer. At the beginning of the game, the timer starts at ten (10). This number decreases by one (1) every second until it reaches zero (0). Once the timer 
-has reached zero (0), a new question is randomly generated and three (3) points are deducted from the score tally. When a new question is randomly generated the timer resets itself 
-to ten (10). This stays true for all ten (10) questions and never falters. If a question is answered, correctly or incorrectly, the timer is reset to ten (10) and the next question 
+has reached zero (0), a new question is randomly generated and three (3) points are deducted from the score tally. When a new question is randomly generated, the timer resets itself 
+to ten (10). This stays true for all ten questions and never falters. If a question is answered, correctly or incorrectly, the timer is reset to ten and the next question 
 is randomly generated. When a question is answered, correctly or incorrectly, ten (10) points are awarded to the user and these points are added to the score tally. This stays true 
 for all questions. To the right-hand side of the timer is the score tally. The score tally updates automatically depending on whether the user answers correctly or incorrectly. 
 The user is awarded ten (10) points for a correct answer and deducted three (3) points for an incorrect answer. If the user does not answer a question, this is considered an 
