@@ -334,7 +334,7 @@ Here you shall find a separate markdown file as well as a more visual PDF file c
 
 [Github Pages](https://pages.github.com/) has been used to deploy the Quizzical website.
 
-#### **CONFIGURE GITHUB PAGES** <a name="pages"></a>
+### **CONFIGURE GITHUB PAGES** <a name="pages"></a>
 
 GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, 
 and publishes a website. Quizzical's website has been successfully hosted by GitHub Pages by following these processes:
@@ -347,7 +347,7 @@ and publishes a website. Quizzical's website has been successfully hosted by Git
 
 Please note that it can take up to 20 minutes for this process to complete.
 
-#### **CLONING REPOSITORY** <a name="cloning"></a>
+### **CLONING REPOSITORY** <a name="cloning"></a>
 
 1. Navigate to the Github remote repository: [WebSlinger88: Quizzical](https://github.com/WebSlinger88/Quizzical).
 2. Click 'Clone or Download'.
