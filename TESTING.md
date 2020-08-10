@@ -7,7 +7,7 @@ This has been added in a separate file for its readability and user-friendly app
 to Quizzical's main readme file here: [README.md](https://github.com/WebSlinger88/Quizzical/blob/master/README.md).
 
 You can also find an Excel spreadsheet (saved as PDF) containing extensive test analysis and reporting. This spreadsheet is intended to provide a more visual report.
-You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/blob/master/testing/quizzical-testing.zip)
+You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/assets/testing)
 
 ---
 
@@ -71,7 +71,7 @@ and browser displayed the Questions page perfectly and it was found that the pag
 
 ### **COMPLETED PAGE** <a name="completed-test"></a>
 
-The user is presented with the Completed page. Located at the top is the Quizzical logo. This has keyframes animation which zooms in from 80% to 100% over four seconds. This works well.
+* The user is presented with the Completed page. Located at the top is the Quizzical logo. This has keyframes animation which zooms in from 80% to 100% over four seconds. This works well.
 There is a large heading stating "congratulations" and directly beneath that is the user's awarded score. This score changes every time the game is played. Whatever score the user
 accumulated during the course of the game, that score is presented here. The game has been played multiple times and the score shown is always accurate without fail. Below the score is
 an empty name field with placeholder text informing the user what they should type. I am able to click in this field and type anything I wish. Below the name field is a "Save Score" 
@@ -86,7 +86,7 @@ and it was found that the page was responsive without any issues. Footer display
 
 ### **LEADERBOARD PAGE** <a name="leader-test"></a>
 
-The user is presented with the Leaderboard page. Located at the top left-hand side of the screen is Quizzical's page logo. Central to the page is a large heading. If nobody has ever played
+* The user is presented with the Leaderboard page. Located at the top left-hand side of the screen is Quizzical's page logo. Central to the page is a large heading. If nobody has ever played
 Quizzical on the device they're currently using, no data or charts will be displayed. The page will be blank apart from the logo, header, "Return to Home" button and the footer. If however
 a user has played a game and has been awarded with a score, the leaderboard will display a chart. This chart displays a user's name and their score only. Names are displayed on the left
 and scores are displayed on the right. Every time a game was played, a score was awarded and saved, my name and score was displayed on the leaderboard.html page perfectly and as expected.
@@ -97,7 +97,7 @@ and browser displayed the Leaderboard page perfectly and it was found that the p
 
 ### **FOOTER** <a name="foot-test"></a>
 
-The Quizzical footer is located at the very bottom of all HTML pages within the Quizzical website. Each footer is identical. Each footer contains text and a link to the web developers LinkedIn 
+* The Quizzical footer is located at the very bottom of all HTML pages within the Quizzical website. Each footer is identical. Each footer contains text and a link to the web developers LinkedIn 
 profile page. When this link is clicked, a new tab opens and I am directed to the profile page without a problem. There is also a hover effect much like the box-shadow effect found
 elsewhere on this site. When a user hovers their mouse over the developer's name, the text highlights and the mouse cursor transforms into a pointer. This works well for every HTML page.
 
