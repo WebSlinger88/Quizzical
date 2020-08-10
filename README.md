@@ -385,7 +385,7 @@ Various websites were used for Quizzical's website to become what it is today. A
     * [Google Fonts](https://fonts.google.com/)
     * [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free)
 
-    ---
+---
 
 ### **ACKNOWLEDGEMENTS** <a name="thanks"></a>
 
