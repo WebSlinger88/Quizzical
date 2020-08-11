@@ -94,7 +94,10 @@ Carry on below and read some of Quizzical's user stories to get a feel for what 
 
 ### **STRATEGY** <a name="strategy"></a>
 
-The strategy of the Quizzical website is to entertain and educate users.
+The strategy of the Quizzical website is to entertain and educate users. Our long term ambition is that Quizzical hopes to move into an e-commerce situation 
+where the product is licenced and the product is part of an expanded range. Quizzical hopes to have multiple categories ranging from movie trivia, sports, 
+history, and even geography! It is expected, that within a period, a cloud based storage system will be put in place to further improve the playability and 
+replay value. Another long term strategy is that we hope to offer the public the ability to add their own questions and ultimately host our own API.
 
 ---
 
