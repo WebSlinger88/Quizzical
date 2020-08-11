@@ -290,15 +290,15 @@ the users name and score only. Finally, as mentioned in the navigation section o
 
   ## **TECHNOLOGIES USED** <a name="technologies"></a>
 
-1. HTML5
+1. [HTML](https://html.spec.whatwg.org/multipage/)
 
     * The building blocks to everything that is code! Used to create the foundations of Quizzical's website.
 
-2. CSS3
+2. [CSS](https://www.w3.org/Style/CSS/)
 
     * Who's got style? Used to style Quizzical's HTML code.
 
-3. JavaScript
+3. [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
     * The brains behind it all! Timer? Check. Random Questions? Check.
     Score Counter? Check. You name it, JavaScript has got it!
@@ -338,7 +338,7 @@ the users name and score only. Finally, as mentioned in the navigation section o
 Due to the extensive nature of the testing process, test analysis and reporting can be found by clicking on the following links.
 Here you shall find a separate markdown file as well as a more visual PDF file containing an Excel spreadsheet.
 
-* [Testing.md](https://github.com/WebSlinger88/Quizzical/blob/master/TESTING.md)
+* [TESTING.md](https://github.com/WebSlinger88/Quizzical/blob/master/TESTING.md)
 * [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/assets/testing)
 
 ---
