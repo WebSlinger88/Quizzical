@@ -212,6 +212,9 @@ White text is used here because gold/purple text clashed negatively.
 | Custom Red        |#B61E1E
 | White             |#FFFFFF
 
+The images used for Quizzical's logos were chosen because they relate to the theme of the website. By this, I refer to the brain image. Quizzical is a thinking game
+therefore users must use their brains. The bright lights located above the letters "i" within the logo represent a illuminated light bulb; this conveys thinking.
+
  * The font used throughout Quizzical's website is Google font's Amarante - [Google Fonts' - Amarante](https://fonts.google.com/specimen/Amarante?query=Amarante).
 
  * If at any point a browser cannot support the Amarante font, the browser will fall back on Roboto - [Google Fonts' - Roboto](https://fonts.google.com/specimen/Roboto?query=roboto).
@@ -223,62 +226,97 @@ White text is used here because gold/purple text clashed negatively.
 ### **NAVIGATION** <a name="navigation"></a>
 
 * All pages feature at least one navigation button. The Home page presents the user with two navigation buttons, the "Start Game" button and the "View Leaderboard" button.
-The buttons are fairly large and easily visible. The Questions page offers the user the ability to exit the game and return to the Home page using the "Return to Home"
-button. Again this button is clearly visible toward the bottom of the page. The Completed page has slightly more options in terms of navigation. The first navigation 
-button the user is presented with is the "Save Score" button, this button, however, is disabled. The "Save Score" button has been disabled to prevent users from being able
-to save their score without entering a name into the "Enter Name" field. Once a user has entered their name, the "Save Score" button becomes available to click. Below
-the "Save Score" button there are three more buttons, "Play Again", "View Leaderboard", and "Return to Home". The "Play Again" button will instantly direct the user to a 
-new game of Quizzical. The "View Leaderboard" button will direct the user to view the Leaderboard page of Quizzical's website. Finally, the "Return to Home" button will 
-take the user back to Quizzical's Home page. To summarise, no matter where the user is within Quizzical's website, they shouldn't have any problem navigating themselves around.
+The buttons are fairly large and easily visible.
+
+* The Questions page offers the user the ability to exit the game and return to the Home page using the "Return to Home" button. Again this button is clearly visible toward 
+the bottom of the page. 
+
+* The Completed page has slightly more options in terms of navigation. The first navigation button the user is presented with is the "Save Score" button, this button, however, 
+is disabled. The "Save Score" button has been disabled to prevent users from being able to save their score without entering a name into the "Enter Name" field. Once a user has 
+entered their name, the "Save Score" button becomes available to click. Below the "Save Score" button there are three more buttons, "Play Again", "View Leaderboard", and "Return 
+to Home". The "Play Again" button will instantly direct the user to a new game of Quizzical. 
+
+* The "View Leaderboard" button will direct the user to view the Leaderboard page of Quizzical's website. Finally, the "Return to Home" button will 
+take the user back to Quizzical's Home page. 
+
+* To summarise, no matter where the user is within Quizzical's website, they shouldn't have any problem navigating themselves around.
 Each button has the box-shadow hover effect. This will highlight each button to make them glow gold. 
 
 ### **HOME PAGE** <a name="home"></a>
 
-* The Home page displays a custom made Quizzical logo image developed using Adobe XD. The logo image features keyframes animation. The logo will increase in size from 80%
-to 100% over a period of four seconds. The Home page also includes two paragraphs of text providing information to the user. This text welcomes the user and gives them 
-slight encouragement. Two buttons are found towards the bottom of the page. The first button will start the game. The second button will navigate the user to the leaderboard page.
-This is mentioned in the navigation section of this document. Each button has the box-shadow hover effect. Box-shadow is highly appealing to the eye and
-offers the user a better user experience. It essentially makes the buttons glow gold when they're interacted with.
+* The Home page displays a custom made Quizzical logo image developed using Adobe XD. 
+
+* The logo image features keyframes animation. The logo will increase in size from 80% to 100% over a period of four seconds.
+
+* The Home page includes two paragraphs of text providing information to the user. This text welcomes the user and gives them slight encouragement. 
+
+* Two buttons are found towards the bottom of the page. The first button will start the game. The second button will navigate the user to the leaderboard page.
+This is mentioned in the navigation section of this document. 
+
+* Each button has the box-shadow hover effect. Box-shadow is highly appealing to the eye and offers a better user experience. 
+It essentially makes the buttons glow gold when they're interacted with.
 
 ### **QUESTIONS PAGE** <a name="questions"></a>
 
 * The Questions page displays a slightly different logo image situated to the top left-hand side of the screen. This image uses more width, rather than height, so that
-little vertical screen space is taken up. Similarly, this logo image was developed using Adobe XD. The first thing you should notice are the questions displayed
-on the Questions page. The questions themselves are displayed in a large font in gold text against a purple background, keeping to the theme of the Quizzical website.
-Below the question, the user will be presented with four possible answers, each resembling a clickable button, much like those discovered on the Home page. When a user 
-hovers their mouse over an answer button, the button will have a the box-shadow effect. Below the answer buttons, there is a progress bar. 
-The progress bar is a visual interpretation of how far through the user is in their game. As a user progresses through the game, the progress bar will fill. There are ten 
-questions within the Quizzical game therefore the progress bar will fill ten per cent every time a question is answered. The progress bar has a gold border and a purple background, 
-it fills with gold as the game progresses, keeping to the theme of the website. South of the progress bar, the user is presented with three vital pieces of information. The first 
-piece of information is the question counter. The question counter informs the user which question they are currently on (out of 10). This counter will increase as the game goes on. 
-The second piece of information is the timer. The timer is set to ten seconds (10), which means that each user has a maximum of ten seconds to answer any question. If a user cannot 
-answer a question in time, points will be deducted and the next question will be populated. The third and final piece of information is the score tally. Users will be awarded ten 
-points (10) for each correct answer but three points (3) shall be deducted for any incorrect answer. This will be automatically updated with JavaScript code as the game is played.
-The point system is a key feature of the Quizzical website. It enables key replay value and competitiveness. When a question is answered, the button clicked will briefly
-change colour to either green or red, depending on whether the question was answered correctly or incorrectly. The text also changes to white momentarily. Finally I shall mention 
-that because questions are being loaded from an API, there can be a slight delay. Instead of users staring at a blank screen for any period, a loading spinner has been put in 
-place. This loading spinner is a spinning circle which replaces all of the content of questions.html. It is gold in colour to match the theme of the website. To summarise,
-when a user is waiting for questions to load, the loading spinner appears. When questions are ready to be displayed, the loading spinner disappears and all of question.html's
+little vertical screen space is taken up. Similarly, this logo image was developed using Adobe XD. 
+
+* The first thing you should notice are the questions displayed on the Questions page. The questions themselves are displayed in a large font in gold text against a purple 
+background, keeping to the theme of the Quizzical website.
+
+* Below the question, the user will be presented with four possible answers, each resembling a clickable button, much like those discovered on the Home page. When a user 
+hovers their mouse over an answer button, the button will have a the box-shadow effect. 
+
+* Below the answer buttons, there is a progress bar. The progress bar is a visual interpretation of how far through the user is in their game. As a user progresses through 
+the game, the progress bar will fill. There are ten questions within the Quizzical game therefore the progress bar will fill ten per cent every time a question is answered. 
+The progress bar has a gold border and a purple background, it fills with gold as the game progresses, keeping to the theme of the website. 
+
+* South of the progress bar, the user is presented with three vital pieces of information.
+
+    1. Question Counter. The question counter informs the user which question they are currently on (out of 10). This counter will increase as the game goes on.
+
+    2. Question Timer. The timer is set to ten seconds (10), which means that each user has a maximum of ten seconds to answer any question. If a user cannot 
+    answer a question in time, points will be deducted and the next question will be populated. 
+
+    3. Score Tally. Users will be awarded ten points (10) for each correct answer but three points (3) shall be deducted for any incorrect answer. This will be automatically 
+    updated with JavaScript code as the game is played. The point system is a key feature of the Quizzical website. It enables key replay value and competitiveness. 
+    
+* When a question is answered, the button clicked will briefly change colour to either green or red, depending on whether the question was answered correctly or incorrectly. 
+The text also changes to white momentarily. 
+
+* Finally I shall mention that because questions are being loaded from an API, there can be a slight delay. Instead of users staring at a blank screen for any period, a loading 
+spinner has been put in place. This loading spinner is a spinning circle which replaces all of the content of questions.html. It is gold in colour to match the theme of the website. 
+To summarise, when a user is waiting for questions to load, the loading spinner appears. When questions are ready to be displayed, the loading spinner disappears and all of question.html's
 content re-appears.
 
 ### **COMPLETED PAGE** <a name="completed"></a>
 
-* The completed page has the same logo as the Home page, situated in the middle of the page. This is to grab the user's attention. The Completed page is presented to a user 
-when they have answered all ten questions either correctly or incorrectly. During the game, as mentioned previously, a user accumulates points depending on whether 
-they score a correct answer or an incorrect answer. Ten points (10) for correct, minus three (-3) for incorrect. This score is tallied up and presented to the user with a message of 
-congratulations. Below the awarded points and congratulations message, the user is presented with an "Enter Name" field, this field allows a user to enter their name so that 
-they can ultimately save their awarded score onto the Quizzical leaderboard. Below is a "Save Score" button, as mentioned in the Navigation section of this document. Below are 
-three navigation buttons which allow the user to navigate wherever they wish to go, whether it be to "Play Again", "View Leaderboard", or "Return to Home". Each of these 
-buttons mentioned in the navigation section of this document. Each button has the box-shadow hover effect.
+* The completed page has the same logo as the Home page, situated in the middle of the page. This is to grab the user's attention. 
+
+* The Completed page is presented to a user when they have answered all ten questions either correctly or incorrectly. During the game, as mentioned previously, a user accumulates 
+points depending on whether they score a correct answer or an incorrect answer. Ten points (10) for correct, minus three (-3) for incorrect. This score is tallied up and presented 
+to the user with a message of congratulations. 
+
+* Below the awarded points and congratulations message, the user is presented with an "Enter Name" field, this field allows a user to enter their name so that 
+they can ultimately save their awarded score onto the Quizzical leaderboard. 
+
+* Below is a "Save Score" button, as mentioned in the Navigation section of this document. Below are three navigation buttons which allow the user to navigate wherever they wish to go, 
+whether it be to "Play Again", "View Leaderboard", or "Return to Home". Each of these buttons mentioned in the navigation section of this document. Each button has the box-shadow hover effect.
 
 ### **LEADERBOARD PAGE** <a name="leaderboard"></a>
  
  * The leaderboard page logo is situated to the top left-hand side of the screen, similar to the Questions page. This image uses more width, rather than height, so that
-little vertical screen space is taken up. The Leaderboard page is one key element which provides the user with great replay value. The goal of Quizzical's 
-leaderboard is to offer the user the chance to compete against family and friends and place their name at the top of the board. Each score will be mathematically decided, 
-sorted, and displayed within an attractive table keeping to the same theme as the rest of Quizzical's website. Initially, there will be no table to display, but as users start 
-to complete the quiz and upload their score to local storage, the leaderboard table will begin to populate information. The information that is held and displayed will be 
-the users name and score only. Finally, as mentioned in the navigation section of this document, there is a "Return to Home" button located at the bottom of the Leaderboard page.
+little vertical screen space is taken up. 
+
+* The Leaderboard page is one key element which provides the user with great replay value. The goal of Quizzical's 
+leaderboard is to offer the user the chance to compete against family and friends and place their name at the top of the board. 
+
+* Each score will be mathematically decided, sorted, and displayed within an attractive table keeping to the same theme as the rest of Quizzical's website. Initially, there will be no 
+table to display, but as users start to complete the quiz and upload their score to local storage, the leaderboard table will begin to populate information. The information that is held 
+and displayed will be the users name and score only. 
+
+* Finally, as mentioned in the navigation section of this document, there is a "Return to Home" button located at the bottom of the 
+Leaderboard page.
 
 ### **OTHER FEATURES** <a name="other-feat"></a>
 
@@ -293,6 +331,12 @@ the users name and score only. Finally, as mentioned in the navigation section o
  they cannot be accessed anywhere other than the device they originated from. This means that each device Quizzical is played on will have a completely different leaderboard.
  In the future, cloud storage will be implemented so that players from different households/friendship groups will be able to compete against each other, rather than the current
  situation where people are limited to one device.
+
+ * In the future there will be different categories for a user to choose from. Currently, users are limited to one category, General Knowledge. Soon, users will be able to choose
+ from categories such as History, Sports, Geography, Nature, and many more.
+
+ * Further down the line, we want to make it possible for users to submit their own questions for verification. These questions will then be uploaded into their own category for
+ people to choose from.
 
  ---
 
