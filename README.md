@@ -339,7 +339,7 @@ Due to the extensive nature of the testing process, test analysis and reporting 
 Here you shall find a separate markdown file as well as a more visual PDF file containing an Excel spreadsheet.
 
 * [TESTING.md](https://github.com/WebSlinger88/Quizzical/blob/master/TESTING.md)
-* [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/assets/testing)
+* [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/testing)
 
 ---
 

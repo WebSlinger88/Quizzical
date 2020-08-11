@@ -7,7 +7,7 @@ This has been added in a separate file for its readability and user-friendly app
 to Quizzical's main readme file here: [README.md](https://github.com/WebSlinger88/Quizzical/blob/master/README.md).
 
 You can also find an Excel spreadsheet (saved as PDF) containing extensive test analysis and reporting. This spreadsheet is intended to provide a more visual report.
-You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/assets/testing).
+You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](https://github.com/WebSlinger88/Quizzical/tree/master/testing).
 
 ---
 
