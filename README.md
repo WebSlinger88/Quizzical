@@ -135,9 +135,9 @@ Below you shall find some images of the original sketches used to help develop t
 
 * [Questions Page Sketch](design/sketches/ms2-sketch-questions.jpg)
 
-* [Completed Page Sketch](design/images/sketches/ms2-sketch-completed.jpg)
+* [Completed Page Sketch](design/sketches/ms2-sketch-completed.jpg)
 
-* [Leaderboard Page Sketch](design/images/sketches/ms2-sketch-leaderboard.jpg)
+* [Leaderboard Page Sketch](design/sketches/ms2-sketch-leaderboard.jpg)
 
 After drawing up the sketches it was time to get them onto the screen. To do this a wireframe was created using Balsamiq Wireframes 4.
 Wireframes are used to display what the creator ultimately envisions the website to look like, roughly! It acts as one of the first stepping stones
