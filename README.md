@@ -12,7 +12,7 @@ Quizzical was created with this in mind; for friends and family to gather togeth
 
 ---
 
-## **TABLE OF CONTENTS**
+## :books: **TABLE OF CONTENTS**
 
 1. [Live Demo](#live-demo)  
 

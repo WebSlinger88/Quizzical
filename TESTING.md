@@ -11,7 +11,7 @@ You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](http
 
 ---
 
-## **TABLE OF CONTENTS**
+## :books: **TABLE OF CONTENTS**
 
 1. [Testing](#testing)
     * [Home](#home-test)
@@ -31,7 +31,7 @@ You can find a link to the Excel (PDF) report here: [Quizzical Testing PDF](http
 
 ---
 
-## **TESTING** <a name="testing"></a>
+## :test_tube: **TESTING** <a name="testing"></a>
 
 ### **HOME PAGE** <a name="home-test"></a>
 
@@ -132,7 +132,7 @@ elsewhere on this site. When a user hovers their mouse over the developer's name
 
 ---
 
-## **DISPLAY TESTING** <a name="display-test"></a>
+## :tv: **DISPLAY TESTING** <a name="display-test"></a>
 
 The Quizzical website has been tested using an 18" Dell XPS laptop with Windows 10 + on an external 30" display as well as the following devices:
 
@@ -158,7 +158,7 @@ It is worth mentioning that the Quizzical favicon image displays within the brow
 
 ---
 
-## **CODE VALIDATION** <a name="validation"></a>
+## :heavy_check_mark: **CODE VALIDATION** <a name="validation"></a>
 
 Quizzical's code has been tested via the [W3C Markup Validation Service](https://validator.w3.org/) & [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 A few warnings did flag up:
@@ -175,7 +175,7 @@ No irrelevant code currently exists within the style.css file.
 
 ---
 
-## **OTHER** <a name="other"></a>
+## :memo: **OTHER** <a name="other"></a>
 
 ### **IMAGE SIZE REDUCTION** <a name="size"></a>
 
@@ -199,4 +199,4 @@ Because setInterval is set to 1000ms, every time it was called, it added an extr
 
 ---
 
-[Return to top?](#top)
+[:arrow_up: Return to top?](#top)
