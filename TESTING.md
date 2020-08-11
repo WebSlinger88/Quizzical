@@ -193,4 +193,8 @@ Because setInterval is set to 1000ms, every time it was called, it added an extr
 
 ---
 
+***This document is for educational use***
+
+---
+
 [Return to top?](#top)
