@@ -1,4 +1,4 @@
-![Quizzical](assets/images/readme/readme-logo.png "Quizzical Logo")
+<div align="center"> <img src="assets/images/readme/readme-logo.png"> </div>
 
 # **QUIZZICAL** <a name="top"></a>
 
