@@ -52,7 +52,7 @@ Quizzical was created with this in mind; for friends and family to gather togeth
 
 ---
 
-## **LIVE DEMO** <a name="live-demo"></a>
+## :computer: **LIVE DEMO** <a name="live-demo"></a>
 
 Please feel free to delve into a demo of Quizzical's website.
 
@@ -62,7 +62,7 @@ You can live demo Quizzical's website here: [Quizzical](https://webslinger88.git
 
 ---
 
-## **UX** <a name="ux"></a>
+## :sparkles: **UX** <a name="ux"></a>
 
 The user experience (UX) is what a user of a particular product experiences when using that product. A UX designer's job is thus to create a product that 
 provides the best possible user experience. We're going to provide some insight into the UX process here, focusing on the important Who, What and How?
@@ -230,7 +230,7 @@ therefore users must use their brains. The bright lights located above the lette
 
 ---
 
-## **EXISTING FEATURES** <a name="existing"></a>
+## :page_facing_up: **EXISTING FEATURES** <a name="existing"></a>
 
 ### **NAVIGATION** <a name="navigation"></a>
 
@@ -334,7 +334,7 @@ Leaderboard page.
 
 ---
 
- ## **FEATURES LEFT TO IMPLEMENT** <a name="features-left"></a>
+ ## :pencil2: **FEATURES LEFT TO IMPLEMENT** <a name="features-left"></a>
 
  * Currently, there is no way for users to save their score on a device and then access their score on another device. Currently, scores are saved on local storage, therefore
  they cannot be accessed anywhere other than the device they originated from. This means that each device Quizzical is played on will have a completely different leaderboard.
@@ -349,7 +349,7 @@ Leaderboard page.
 
  ---
 
-  ## **TECHNOLOGIES USED** <a name="technologies"></a>
+  ## :cd: **TECHNOLOGIES USED** <a name="technologies"></a>
 
 1. [HTML](https://html.spec.whatwg.org/multipage/)
 
@@ -394,7 +394,7 @@ Leaderboard page.
 
 ---
 
-## **TESTING** <a name="testing"></a>
+## :test_tube: **TESTING** <a name="testing"></a>
 
 Due to the extensive nature of the testing process, test analysis and reporting can be found by clicking on the following links.
 Here you shall find a separate markdown file as well as a more visual PDF file containing an Excel spreadsheet.
@@ -404,7 +404,7 @@ Here you shall find a separate markdown file as well as a more visual PDF file c
 
 ---
 
-## **DEPLOYMENT** <a name="deployment"></a>
+## :airplane: **DEPLOYMENT** <a name="deployment"></a>
 
 [Github Pages](https://pages.github.com/) has been used to deploy the Quizzical website.
 
@@ -433,7 +433,7 @@ and publishes a website. Quizzical's website has been successfully hosted by Git
 
 ---
 
-## **CREDITS** <a name="credits"></a>
+## :clapper: **CREDITS** <a name="credits"></a>
 
 Various websites were used for Quizzical's website to become what it is today. All content displayed is part of the public domain.
 
