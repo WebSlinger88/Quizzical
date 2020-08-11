@@ -274,7 +274,7 @@ little vertical screen space is taken up. Similarly, this logo image was develop
 background, keeping to the theme of the Quizzical website.
 
 * Below the question, the user will be presented with four possible answers, each resembling a clickable button, much like those discovered on the Home page. When a user 
-hovers their mouse over an answer button, the button will have a the box-shadow effect. 
+hovers their mouse over an answer button, the button will have a box-shadow effect. 
 
 * Below the answer buttons, there is a progress bar. The progress bar is a visual interpretation of how far through the user is in their game. As a user progresses through 
 the game, the progress bar will fill. There are ten questions within the Quizzical game therefore the progress bar will fill ten per cent every time a question is answered. 
@@ -310,7 +310,7 @@ to the user with a message of congratulations.
 they can ultimately save their awarded score onto the Quizzical leaderboard. 
 
 * Below is a "Save Score" button, as mentioned in the Navigation section of this document. Below are three navigation buttons which allow the user to navigate wherever they wish to go, 
-whether it be to "Play Again", "View Leaderboard", or "Return to Home". Each of these buttons mentioned in the navigation section of this document. Each button has the box-shadow hover effect.
+whether it be to "Play Again", "View Leaderboard", or "Return to Home". Each of these buttons are mentioned in the navigation section of this document. Each button has the box-shadow hover effect.
 
 ### **LEADERBOARD PAGE** <a name="leaderboard"></a>
  
@@ -419,7 +419,7 @@ and publishes a website. Quizzical's website has been successfully hosted by Git
 4. Locate Source's dropdown menu and select 'Master Branch'.
 5. After a short period of time, a link will become available above. Quizzical's link is: [Quizzical](https://webslinger88.github.io/Quizzical/).
 
-Please note that it can take up to 20 minutes for this process to complete.
+*Please note that it can take up to 20 minutes for this process to complete.*
 
 ### **CLONING REPOSITORY** <a name="cloning"></a>
 
