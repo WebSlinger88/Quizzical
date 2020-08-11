@@ -72,18 +72,23 @@ Carry on below and read some of Quizzical's user stories to get a feel for what 
 
 ### **USER STORIES** <a name="stories"></a>
 
->  * I thought this quiz was great! Really tested my knowledge! - Lindsay W. 
+>   Bright attractive colours are needed. My favourite colours are purple and gold.
 
->  * I love the leaderboard aspect, I wish the leaderboard saved over the cloud though! Wanna play with my mates! - John P.
+>   Need an attractive logo which really captures the eye.
 
->  * Played this with my 10 year old, she did better than me! Great family fun! - Mandy S.
+>   A font which isn't seen every day should be used to make the website more unique.
 
->  * Love the colours! My favourite colours! - Ruby R.
+>   Randomly generated questions/answers are a must have!
 
->  * Great game. Wish we had a little longer to answer each question... - Ben D.
+>   A progress bar should be included to give people a visualisation of their progress.
 
->  * The game is good but after playing for quite a while the questions given are starting
-    to repeat themselves. It would be good to have a bigger pool of questions - Phil W.
+>   Definitely need a timer to be included so that players have a sense of urgency.
+
+>   Need a visual way to keep track of what question you're on and what score you have.
+
+>   Must have a leaderboard and a way to save scores.
+
+>   Easy navigation within the website is a must. Have to make it user friendly.
 
 ---
 
