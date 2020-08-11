@@ -442,7 +442,7 @@ Various websites were used for Quizzical's website to become what it is today. A
 * Quizzical's logos were created and designed by [Lewis Wheeler](https://www.linkedin.com/in/lewis-wheeler-aa91791a0/) - Quizzical's Full Stack Web Developer, using [Adobe XD](https://www.adobe.com/uk/products/xd.html). Images sourced from [PNG Guru](https://www.pngguru.com/).
 * Some textual content on the Quizzical website was written by [Lewis Wheeler](https://www.linkedin.com/in/lewis-wheeler-aa91791a0/) - Quizzical's Full Stack Web Developer.
 * Textual content not written by Quizzical's developer was taken from [Open Trivia Database](https://opentdb.com/) which is a free to use, user-contributed trivia question database.
-* Although not copied, it's worth mentioning that [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) was a great help during the JavaScript coding for Quizzical's website. Please see Acknowledgements below.
+* Although not copied exactly, it's worth mentioning that [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) was a great help during the JavaScript coding for Quizzical's website. Please see Acknowledgements below.
 
 ### **MEDIA** <a name="media"></a>
 
@@ -462,7 +462,7 @@ Inspiration was used in various locations across the world wide web. Please see 
 * JavaScript - [James Q Quick - Youtube](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) | [James Q Quick - Github](https://github.com/jamesqquick)
 
     * James Q Quick's video tutorials were very helpful during the JavaScript coding process. The Quiz App videos were especially helpful - [Build a Quiz App](https://www.youtube.com/watch?v=u98ROZjBWy8).
-    Please note that no code was copied directly.
+    Code has not been copied exactly. There are similarities to be found. Please make note of this. James Q Quick does deserve credit.
 
 * Timer - [Muhanad Hasan](https://www.youtube.com/channel/UC1xxTfHbYlFLzjqUIQbA7iQ)
 
