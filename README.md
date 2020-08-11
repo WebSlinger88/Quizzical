@@ -242,11 +242,11 @@ the bottom of the page.
 
 * The Completed page has slightly more options in terms of navigation. The first navigation button the user is presented with is the "Save Score" button, this button, however, 
 is disabled. The "Save Score" button has been disabled to prevent users from being able to save their score without entering a name into the "Enter Name" field. Once a user has 
-entered their name, the "Save Score" button becomes available to click. Below the "Save Score" button there are three more buttons, "Play Again", "View Leaderboard", and "Return 
-to Home". The "Play Again" button will instantly direct the user to a new game of Quizzical. 
+entered their name, the "Save Score" button becomes available to click. 
 
-* The "View Leaderboard" button will direct the user to view the Leaderboard page of Quizzical's website. Finally, the "Return to Home" button will 
-take the user back to Quizzical's Home page. 
+* Below the "Save Score" button there are three more buttons, "Play Again", "View Leaderboard", and "Return to Home". The "Play Again" button will instantly direct the user to 
+a new game of Quizzical. The "View Leaderboard" button will direct the user to view the Leaderboard page of Quizzical's website. Finally, the "Return to Home" button will take 
+the user back to Quizzical's Home page. 
 
 * To summarise, no matter where the user is within Quizzical's website, they shouldn't have any problem navigating themselves around.
 Each button has the box-shadow hover effect. This will highlight each button to make them glow gold. 
