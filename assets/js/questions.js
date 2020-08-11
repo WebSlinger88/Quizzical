@@ -46,6 +46,7 @@ const totalQuests = 10;
 // possibleAnswers created to hold answers and Math used to put them in random order.
 // Splice used on correct answer which is placed into random location.
 // Answers are assigned index so they appear on screen in order generated.
+// Please see acknowledgements section of README.md file.
 
 fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
     .then(function (res) {
@@ -104,6 +105,7 @@ gameBegin = function () {
 // Data-set number read in html file and linked to answer. currentQ answer and number displayed in html file.
 // Splice used for question just used so that it's not displayed again.
 // countDown function called for timer.
+// Please see acknowledgements section of README.md file.
 
 nextQuest = function () {
 
