@@ -6,6 +6,10 @@ Quizzical is a fun, exciting, general knowledge-based quiz game. The Quizzical w
 one that's memorable and has great replay value. Quizzical is also intended to teach and educate users. It is hoped that people will walk away feeling
 like they've learnt something. Quizzical is aimed at both adults and children alike.
 
+The idea for Quizzical first originated from a group of friends gathering together every weekend to compete in a quiz night, hosted over [Zoom](https://zoom.us/),
+during the Covid-19 lockdown. Each weekend, someone would create their own quiz, and each friend would battle it out to try and win the chance to host the next quiz.
+Quizzical was created with this in mind; for friends and family to gather together and have fun during tough times.
+
 ---
 
 ## **TABLE OF CONTENTS**
