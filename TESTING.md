@@ -106,17 +106,19 @@ elsewhere on this site. When a user hovers their mouse over the developer's name
 
 The Quizzical website has been tested using an 18" Dell XPS laptop with Windows 10 + on an external 30" display as well as the following devices:
 
-* Google Chrome Version 84.0.4147.105 (Official Build) (64-bit)
-* Firefox Version 79.0
-* Opera Version 70.0
-* Safari Version 13.1
-* Edge on Windows 10 Version 84.0.522.52
-* Google Chrome on Android (Samsung Galaxy S8+) 84.0.4147.111
-* Google Chrome on Android (OnePlus 7T Pro) 84.0.4147.111
-* Safari on iOS 13.1 (Apple iPhone 7 Plus)
-* Silk on Amazon Kindle Fire 5 Version 83.3.19.4103.106.30
-* Internet Explorer 10 - via [Cloud Browser](https://www.ieonchrome.com/)
-* Internet Explorer 11 - via [Cloud Browser](https://www.ieonchrome.com/)
+| **Browser Platform**                       | **Version**    
+| -------------------------------------------|:---------------------------------------------:| 
+| Google Chrome (Official Build) (64-bit)    | 84.0.4147.105
+| Firefox (Windows 10)                       | 79.0
+| Opera (Windows 10)                         | 70.0
+| Safari (Windows 10)                        | 13.1
+| Edge (Windows 10)                          | 84.0.522.52
+| Google Chrome Android (Samsung Galaxy S8+) | 84.0.4147.111
+| Google Chrome Android (OnePlus 7T Pro)     | 84.0.4147.111
+| Safari iOS (Apple iPhone 7 Plus)           | 13.1
+| Silk Android (Amazon Kindle Fire 5)        | 83.3.19.4103.106.30
+| Internet Explorer 10                       | [Cloud Browser](https://www.ieonchrome.com/)
+| Internet Explorer 11                       | [Cloud Browser](https://www.ieonchrome.com/)
 
 All tests were positive and no issues found apart from Internet Explorer 10 & 11 would not load the questions.html page. This is not a problem because
 Internet Explorer is now obsolete. It may also be worth mentioning that the keyframes animation on the index.html page is extremely laggy when using
