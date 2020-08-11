@@ -455,8 +455,6 @@ Various websites were used for Quizzical's website to become what it is today. A
     * [Google Fonts](https://fonts.google.com/)
     * [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free)
 
----
-
 ### **ACKNOWLEDGEMENTS** <a name="thanks"></a>
 
 Inspiration was used in various locations across the world wide web. Please see below some of the key sources used to help develop Quizzical.
