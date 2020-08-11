@@ -76,23 +76,23 @@ Carry on below and read some of Quizzical's user stories to get a feel for what 
 
 ### **USER STORIES** <a name="stories"></a>
 
->   Bright attractive colours are needed. My favourite colours are purple and gold.
+>   Bright attractive colours are needed. My favourite colours are purple and gold. - Lindsay W
 
->   Need an attractive logo which really captures the eye.
+>   Need an attractive logo which really captures the eye. - Diane W
 
->   A font which isn't seen every day should be used to make the website more unique.
+>   A font which isn't seen every day should be used to make the website more unique. - Elliot R
 
->   Randomly generated questions/answers are a must have!
+>   Randomly generated questions/answers are a must have! - Abi C
 
->   A progress bar should be included to give people a visualisation of their progress.
+>   A progress bar should be included to give people a visualisation of their progress. - Laurie D
 
->   Definitely need a timer to be included so that players have a sense of urgency.
+>   Definitely need a timer to be included so that players have a sense of urgency. - Lindsay W
 
->   Need a visual way to keep track of what question you're on and what score you have.
+>   Need a visual way to keep track of what question you're on and what score you have. - Heather P
 
->   Must have a leaderboard and a way to save scores.
+>   Must have a leaderboard and a way to save scores. - Phil W
 
->   Easy navigation within the website is a must. Have to make it user friendly.
+>   Easy navigation within the website is a must. Have to make it user friendly. - Becky D
 
 ---
 
