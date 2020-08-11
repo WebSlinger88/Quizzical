@@ -61,10 +61,12 @@ to the theme of the website. Also, it's worth mentioning that the mouse cursor t
 * When a question is answered correctly, the button will briefly change colour to green and it's text colour changes to white. If a question is answered incorrectly, the button will briefly 
 change colour to red and it's text colour changes to white. This stays true for all question's answers. This is a great indication to the user as to whether they answered correctly or not. 
 
-* Below the questions/answers, the user is presented with a long horizontal progression bar. This bar appears empty, but every time the user answers a question, the bar fills by ten percent (10%). 
-The bar fills by ten percent (10%) because there are ten (10) questions in total. The game has been played multiple times and the bar has filled as expected every time without fail. The only thing 
+* Below the questions/answers, the user is presented with a long horizontal progression bar. This bar appears empty, but every time the user answers a question, the bar fills by ten per cent (10%). 
+The bar fills by ten per cent because there are ten (10) questions in total. The game has been played multiple times and the bar has filled as expected every time without fail. The only thing 
 noticed which may not be intentional is that when completing question ten out of ten (10/10), the bar does not fill all the way to the top and the completed.html page is loaded. One would expect 
-the bar to fill completely once the final question has been answered. This does not impact the game in any way and does not harm the user's experience whatsoever. 
+the bar to fill completely once the final question has been answered. Another slight issue which may be worth mentioning is that when using Chrome developer tools and viewing the web page as a 
+Galaxy Fold device, the inner div of the progression bar doesn't fill the outer div fully (vertically). It is only slight, but this has been tested and noted. These two minor issues do not impact 
+the game in any way and does not harm the user's experience whatsoever.
 
 * Positioned below the progression bar, situated to the left, is a question counter. The question counter is displayed one out of ten (1/10) at the start of the game. Every time a question is answered 
 the first number in the fraction is increased by one (1). As the game progresses, the counter eventually reaches ten out of ten (10/10), once all questions have been answered. The math within the 
@@ -77,7 +79,7 @@ When a question is answered, correctly or incorrectly, ten points are awarded to
 
 * To the right-hand side of the timer is the score tally. The score tally updates automatically depending on whether the user answers correctly or incorrectly. The user is awarded ten (10) points 
 for a correct answer and deducted three (3) points for an incorrect answer. If the user does not answer a question, this is considered an incorrect answer, thus resulting in a point deduction. 
-There are a total of one hundred (100) points to be earned and minus thirty (-30) to be deducted. These limits are reachableas tested through multiple plays. 
+There are a total of one hundred (100) points to be earned and minus thirty (-30) to be deducted. These limits are reachable as tested through multiple plays. 
 
 * The Questions page has been tested across multiple devices and browsers: Chrome, Firefox, Safari, Samsung, iPhone, Amazon... to name a few. Each device and browser displayed the Questions page 
 perfectly and it was found that the page was responsive without any issues. 
@@ -109,7 +111,7 @@ perfectly and it was found that the page was responsive without any issues.
 ### **LEADERBOARD PAGE** <a name="leader-test"></a>
 
 * The user is presented with the Leaderboard page. Located at the top left-hand side of the screen is Quizzical's page logo. Central to the page is a large heading. If nobody has ever played
-Quizzical on the device they're currently using, no data or charts will be displayed. The page will be blank apart from the logo, header, "Return to Home" button and the footer. If however
+Quizzical on the device they're currently using, no data or charts will be displayed. The page will be blank apart from the logo, header, "Return to Home" button, and the footer. If however
 a user has played a game and has been awarded with a score, the leaderboard will display a chart. This chart displays a user's name and their score only. Names are displayed on the left
 and scores are displayed on the right. Every time a game was played, a score was awarded and saved, my name and score was displayed on the leaderboard.html page perfectly and as expected.
 I feel this works rather well. Please note that scores are saved in local storage so if a computer's cache is deleted, so will the scores on the leaderboard. Scores are limited to their devices,
