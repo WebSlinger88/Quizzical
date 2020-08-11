@@ -186,7 +186,7 @@ experience due to loading times being cut short.
 
 All of Quizzical's textual content including this Readme file has been run through [Grammarly](https://www.grammarly.com) to check for any spelling and grammar mistakes.
 
-### **Bugs** <a name="bugs"></a>
+### **BUGS** <a name="bugs"></a>
 
 During the creation of the Quizzical website I came across one rather troublesome bug. The JavaScript timer counted down perfectly but when it moved onto the next question,
 the timer reduced by two instead of one. When the next question was populated, the timer reduced by three, and so on... After much deliberation and strenuous testing, it was
